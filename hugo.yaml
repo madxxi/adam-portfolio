@@ -1,0 +1,261 @@
+baseURL: "https://github.com/madxxi/adam-portfolio/"
+languageCode: "en-us"
+title: "Adam Diaz | Site Reliability & Platform Engineering"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# No blog/gallery menu items — this is a single-page portfolio.
+# Add them back here later if you want to write posts.
+Menus:
+  main: []
+
+params:
+  title: "Adam Diaz | Site Reliability & Platform Engineering"
+  description: "Lead Systems Engineer with 20+ years in SRE, platform operations, and observability for high-availability, global-scale infrastructure."
+  favicon: "/fav.png"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  theme:
+    disableThemeToggle: false
+    defaultTheme: "dark"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "Adam Diaz"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # ---- HERO ----
+  hero:
+    enable: true
+    intro: "Hi, I'm"
+    title: "Adam Diaz."
+    subtitle: "Lead Systems Engineer — SRE, Platform Ops & Observability"
+    content: >-
+      20+ years keeping high-availability, global-scale systems running — most recently
+      leading reliability engineering for airline reservation infrastructure at Amadeus.
+      I build alerting-as-code with Prometheus/PromQL, design Grafana dashboards that
+      teams actually use, and treat incident response like a discipline, not a fire drill.
+    image: /images/hero.svg
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "Download Résumé"
+      url: "/documents/adam-diaz-resume.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/mynor-diaz
+        - icon: fab fa-github
+          url: https://github.com/YOUR-GITHUB-USERNAME
+        # - icon: fa fa-envelope
+        #   url: mailto:YOUR_EMAIL@example.com
+
+  # ---- ABOUT ----
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      I'm a Lead Systems Engineer with 20+ years of experience across site reliability
+      engineering, platform operations, and observability tooling, most recently at
+      **Amadeus**, working within high-availability global airline reservation infrastructure.
+
+      My focus is on making systems observable and incidents boring: alerting-as-code with
+      Prometheus and PromQL, Grafana dashboards designed for the people who actually get
+      paged, git-based workflows for infrastructure changes, and clean incident routing
+      through ServiceNow. I hold an MS in Computer Information Systems from Nova
+      Southeastern University and an MBA from the University of Florida, and I'm a U.S.
+      military veteran.
+
+      I'm currently open to Lead/Senior SRE, Platform Engineering, and Cloud Infrastructure
+      roles — remote or based in South Florida.
+    skills:
+      enable: true
+      title: "Core tools and technologies:"
+      items:
+        - "Prometheus / PromQL"
+        - "Grafana"
+        - "Terraform"
+        - "AWS"
+        - "Git"
+        - "ServiceNow"
+        - "Kubernetes"
+        - "Linux"
+        - "CI/CD"
+        - "Incident Response"
+
+  # ---- EXPERIENCE ----
+  # Add earlier roles below the Amadeus entry as additional "company" blocks.
+  experience:
+    enable: true
+    items:
+      - company: "Amadeus"
+        companyUrl: "https://amadeus.com"
+        jobs:
+          - name: "Lead Systems Engineer"
+            date: "[START DATE] - Present"
+            info:
+              content: "Site reliability & platform operations for global airline reservation infrastructure"
+            content: |
+              Leading reliability engineering and platform operations for high-availability,
+              global-scale airline reservation systems.
+
+              - Built and maintained alerting-as-code using Prometheus and PromQL across
+                [ADD: number/scope] of services, reducing noisy or redundant alerts.
+              - Designed Grafana dashboards used by on-call engineers and leadership to track
+                system health and availability.
+              - Standardized git-based workflows for infrastructure and alerting-rule changes,
+                enabling review and rollback like application code.
+              - Streamlined incident routing and response through ServiceNow, improving
+                [ADD: MTTA/MTTR or another concrete metric you can cite].
+
+      # - company: "[PREVIOUS EMPLOYER]"
+      #   companyUrl: "https://example.com"
+      #   jobs:
+      #     - name: "[TITLE]"
+      #       date: "[START] - [END]"
+      #       content: |
+      #         [Describe scope and impact]
+
+  # ---- EDUCATION ----
+  education:
+    enable: true
+    items:
+      - title: "MBA"
+        school:
+          name: "University of Florida"
+          url: "https://www.ufl.edu"
+      - title: "MS, Computer Information Systems"
+        school:
+          name: "Nova Southeastern University"
+          url: "https://www.nova.edu"
+
+  # ---- ACHIEVEMENTS ----
+  # Use this section for certifications, veteran recognition, or specific
+  # wins you can point to — swap the placeholders for real specifics.
+  achievements:
+    enable: true
+    title: "Background & Recognition"
+    items:
+      - title: "U.S. Military Veteran"
+        content: "Service background informing a disciplined, process-oriented approach to operations and incident response."
+      - title: "[ADD: Uptime/Availability Metric]"
+        content: "e.g. 'Helped maintain 99.9x% availability across reservation platform services in [year/period].'"
+      - title: "[ADD: Certification in progress or completed]"
+        content: "e.g. AWS Certified Solutions Architect, Terraform Associate, CKA — update as you complete them."
+
+  # ---- PROJECTS / TECHNICAL ARTIFACTS ----
+  # This is the section that differentiates you from a resume PDF.
+  # Replace each `link` below with the real GitHub repo URL once you push
+  # your sanitized PromQL library, Grafana dashboards, and runbook.
+  projects:
+    enable: true
+    title: "Technical Artifacts"
+    items:
+      - title: "PromQL Alerting Pattern Library"
+        content: "A sanitized collection of Prometheus alerting rules and PromQL query patterns for common SRE scenarios — latency, saturation, error budgets, and multi-window burn-rate alerts."
+        image: /images/projects/promql.png
+        featured:
+          name: "View Repo"
+          link: "https://github.com/YOUR-GITHUB-USERNAME/promql-alerting-patterns"
+        badges:
+          - "Prometheus"
+          - "PromQL"
+          - "Alerting-as-Code"
+        links:
+          - icon: fab fa-github
+            url: "https://github.com/YOUR-GITHUB-USERNAME/promql-alerting-patterns"
+
+      - title: "Grafana Dashboard Gallery"
+        content: "Sanitized Grafana dashboard exports (JSON) demonstrating layout, variable templating, and alerting integration for on-call visibility."
+        image: /images/projects/grafana.png
+        featured:
+          name: "View Repo"
+          link: "https://github.com/YOUR-GITHUB-USERNAME/grafana-dashboard-gallery"
+        badges:
+          - "Grafana"
+          - "Observability"
+        links:
+          - icon: fab fa-github
+            url: "https://github.com/YOUR-GITHUB-USERNAME/grafana-dashboard-gallery"
+
+      - title: "Incident Response Runbook Template"
+        content: "A generalized incident-response runbook and postmortem template reflecting ServiceNow-based routing and escalation practices for high-availability environments."
+        image: /images/projects/runbook.png
+        badges:
+          - "Incident Response"
+          - "ServiceNow"
+          - "Process"
+        links:
+          - icon: fab fa-github
+            url: "https://github.com/YOUR-GITHUB-USERNAME/incident-runbook-template"
+
+  # ---- CONTACT ----
+  contact:
+    enable: true
+    content: "Open to Lead/Senior SRE, Platform Engineering, and Cloud Infrastructure roles — remote or South Florida based. Reach out directly."
+    btnName: "Email Me"
+    btnLink: "mailto:YOUR_EMAIL@example.com"
+
+  footer:
+    recentPosts:
+      enable: false
+    socialNetworks:
+      github: https://github.com/YOUR-GITHUB-USERNAME
+      linkedin: https://www.linkedin.com/in/mynor-diaz
+
+  singlePages:
+    socialShare: false
+    scrollprogress:
+      enable: true
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
