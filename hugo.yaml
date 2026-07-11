@@ -75,6 +75,7 @@ params:
     image: /images/hero.svg
     bottomImage:
       enable: true
+      
     button:
       enable: true
       name: "Download SR SRE Résumé"
@@ -82,18 +83,22 @@ params:
       download: true
       newPage: false
 
+    button:
+      enable: true
       name: "Download SRE Manager Résumé"
       url: "/documents/MynorDiaz-Manager_ND.pdf"
       download: true
       newPage: false 
 
+    button:
+      enable: true    
       name: "Download Service/Incident Manager Résumé"
       url: "/documents/MynorDiazResume_Incident-Manager_ND.pdf"
       download: true
       newPage: false 
 
-    socialLinks:
-      fontAwesomeIcons:
+      socialLinks:
+       fontAwesomeIcons:
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/mynor-diaz
         - icon: fab fa-github
@@ -106,7 +111,7 @@ params:
     enable: true
     title: "About Me"
     image: "/images/me.png"
-    content: 
+    content: |
       I'm a Lead Systems Engineer with 20+ years of experience across site reliability
       engineering, platform operations, and observability tooling, most recently at
       **Amadeus**, working within high-availability global airline reservation infrastructure.
