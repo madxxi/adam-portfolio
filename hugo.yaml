@@ -37,7 +37,7 @@ params:
 
   theme:
     disableThemeToggle: false
-    defaultTheme: "PaperMod"
+    defaultTheme: "dark"
 
   font:
     fontSize: 1rem
