@@ -1,6 +1,6 @@
 baseURL: "https://madxxi.github.io/adam-portfolio/"
 languageCode: "en-us"
-title: "Mynor A. Diaz | Site Reliability & Platform Engineering"
+title: "Mynor A. Diaz | Sr. Service Reliability Engineering"
 theme: hugo-profile
 
 outputs:
@@ -28,7 +28,7 @@ Menus:
   main: []
 
 params:
-  title: "Mynor A. Diaz | Site Reliability & Platform Engineering"
+  title: "Mynor A. Diaz | Sr. Service Reliability Engineering"
   description: "Lead Systems Engineer with 20+ years in SRE, platform operations, and observability for high-availability, global-scale infrastructure."
   favicon: "/fav.png"
   useBootstrapCDN: false
@@ -37,7 +37,7 @@ params:
 
   theme:
     disableThemeToggle: false
-    defaultTheme: "dark"
+    defaultTheme: "PaperMod"
 
   font:
     fontSize: 1rem
@@ -77,10 +77,23 @@ params:
       enable: true
     button:
       enable: true
-      name: "Download Résumé"
-      url: "/documents/adam-diaz-resume.pdf"
+      name: "Download SR SRE Résumé"
+      url: "/documents/MynorDiaz-Lead_SreSRE-Resiliency and Operations_ND.pdf"
       download: true
       newPage: false
+    button:
+      enable: true
+      name: "Download SRE Manager Résumé"
+      url: "/documents/MynorDiaz-Manager_ND.pdf"
+      download: true
+      newPage: false 
+    button:
+      enable: true
+      name: "Download Service/Incident Manager Résumé"
+      url: "/documents/MynorDiazResume_Incident-Manager_ND.pdf"
+      download: true
+      newPage: false 
+
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-linkedin
