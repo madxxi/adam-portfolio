@@ -73,9 +73,9 @@ params:
       I build alerting-as-code with Prometheus/PromQL, design Grafana dashboards that
       teams actually use, and treat incident response like a discipline, not a fire drill.
     image: /images/hero.svg
+
     bottomImage:
-      enable: true
-      
+      enable: true   
     button:
       enable: true
       name: "Download SR SRE Résumé"
@@ -83,6 +83,7 @@ params:
       download: true
       newPage: false
 
+    bottomImage:
     button:
       enable: true
       name: "Download SRE Manager Résumé"
@@ -90,6 +91,7 @@ params:
       download: true
       newPage: false 
 
+    bottomImage:
     button:
       enable: true    
       name: "Download Service/Incident Manager Résumé"
