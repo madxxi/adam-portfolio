@@ -1,6 +1,6 @@
 baseURL: "https://madxxi.github.io/adam-portfolio/"
 languageCode: "en-us"
-title: "Adam Diaz | Site Reliability & Platform Engineering"
+title: "Mynor A. Diaz | Site Reliability & Platform Engineering"
 theme: hugo-profile
 
 outputs:
@@ -28,7 +28,7 @@ Menus:
   main: []
 
 params:
-  title: "Adam Diaz | Site Reliability & Platform Engineering"
+  title: "Mynor A. Diaz | Site Reliability & Platform Engineering"
   description: "Lead Systems Engineer with 20+ years in SRE, platform operations, and observability for high-availability, global-scale infrastructure."
   favicon: "/fav.png"
   useBootstrapCDN: false
@@ -47,7 +47,7 @@ params:
 
   navbar:
     align: ms-auto
-    brandName: "Adam Diaz"
+    brandName: "Mynor A. Diaz"
     disableSearch: true
     stickyNavBar:
       enable: true
@@ -65,7 +65,7 @@ params:
   hero:
     enable: true
     intro: "Hi, I'm"
-    title: "Adam Diaz."
+    title: "Mynor A. Diaz."
     subtitle: "Lead Systems Engineer — SRE, Platform Ops & Observability"
     content: >-
       20+ years keeping high-availability, global-scale systems running — most recently
@@ -87,8 +87,8 @@ params:
           url: https://www.linkedin.com/in/mynor-diaz
         - icon: fab fa-github
           url: https://github.com/YOUR-GITHUB-USERNAME
-        # - icon: fa fa-envelope
-        #   url: mailto:YOUR_EMAIL@example.com
+        - icon: fa fa-envelope
+          url: mailto:mr.mynor.diaz@gmail.com
 
   # ---- ABOUT ----
   about:
@@ -130,45 +130,67 @@ params:
     enable: true
     items:
       - company: "Amadeus"
-        companyUrl: "https://amadeus.com"
+        companyUrl: "https://www.amadeus.com"
         jobs:
-          - name: "Lead Systems Engineer"
-            date: "[START DATE] - Present"
+          - name: "Senior Service Reliability Engineer (SRE) - Cloud Technologies"
+            date: "Jan 2019 - Mar 2026 / Mar 2020- May 2023 (Remote)"
             info:
               content: "Site reliability & platform operations for global airline reservation infrastructure"
             content: |
               Leading reliability engineering and platform operations for high-availability,
               global-scale airline reservation systems.
 
-              - Built and maintained alerting-as-code using Prometheus and PromQL across
-                [ADD: number/scope] of services, reducing noisy or redundant alerts.
-              - Designed Grafana dashboards used by on-call engineers and leadership to track
-                system health and availability.
-              - Standardized git-based workflows for infrastructure and alerting-rule changes,
-                enabling review and rollback like application code.
-              - Streamlined incident routing and response through ServiceNow, improving
-                [ADD: MTTA/MTTR or another concrete metric you can cite].
+              - Owned reliability and operations for 460+ mission-critical production applications (reservations, 
+              ticketing, inventory) serving global travel customers, consistently achieving 98–99% availability and strict SLOs in a 24/7
+              high-traffic SaaS environment.
+              - Spearheaded a major JIRA Epic to standardize, consolidate, and automate alerts using Prometheus, Thanos,
+              PromQL, Go, and ServiceNow — significantly reduced alert noise, enabled on-the-fly Grafana dashboards, and
+              improved operational efficiency across the organization.
+              - Led large-scale cloud migrations from legacy physical/virtual Linux systems to private OpenShift (v3/v4) and
+              public Azure, delivering zero business disruption while modernizing infrastructure and reducing operational
+              overhead.
+              - Drove end-to-end incident, problem, and change management using ITIL best practices; championed blameless
+              postmortems and continuous improvements that enhanced system stability and recovery speed.
+              - Helped developed automation scripts and tooling (Go, Shell, GitHub Actions) to reduce manual toil, accelerate
+              deployments, and improve monitoring and recovery processes.
+              - Trained and onboarded 25+ engineers on cloud services, incidents, and recovery best practices within a SAFe
+              Agile framework.
+              - Via team efforts, streamlined incident routing and response through ServiceNow, improving by at least 10% 
+              the mean time to acknowledge (MTTA) and mean time to resolve (MTTR) for critical incidents, and with it also facilitating automation.
 
-      # - company: "[PREVIOUS EMPLOYER]"
-      #   companyUrl: "https://example.com"
-      #   jobs:
-      #     - name: "[TITLE]"
-      #       date: "[START] - [END]"
-      #       content: |
-      #         [Describe scope and impact]
+        jobs:
+          - name: "Sre SRE (Unix/Linux) / Lead Systems Engineer"
+            date: "Oct 2004 - Jun 2008 / Jul 2008 - Dec 2018"
+            info:
+              content: "Sr. and then Lead Systems Engineer of teams responsible for all production Linux/Unix systems supporting airline reservation infrastructure"
+            content: |
+              - Led a global 24/7 team of 9 SREs, driving mission-critical platform availability to an average of 99% for systems
+              supporting the global travel industry, while directing all incident, change, and problem management using ITIL best
+              practices.
+              - Owned operational stability and risk management for a multi-million Euro environment spanning over 5,500
+              production and test systems (HP-UX, Linux, multiple architectures), overseeing high-availability cluster operations
+              (Veritas, MC/ServiceGuard) and all major OS/database upgrades.
+              - Championed automation and reliability engineering, developing custom scripts and tools (Perl, PHP, HTML) to
+              enhance monitoring, accelerate fault recovery, and eliminate toil, directly supporting the team’s ability to meet stringent
+              availability targets.
+              - Managed cross-functional technical execution, including Oracle version migrations, IBM MQ incident resolution, and
+              oversight of administrative environments (Dev/Pre-Prod/Prod), ensuring coordinated, low-risk change implementation
+              across the entire technology stack.
 
   # ---- EDUCATION ----
   education:
     enable: true
     items:
-      - title: "MBA"
+      - title: "Executive, Business Administration (EMBA)"
         school:
           name: "University of Florida"
           url: "https://www.ufl.edu"
+
       - title: "MS, Computer Information Systems"
         school:
           name: "Nova Southeastern University"
           url: "https://www.nova.edu"
+
 
   # ---- ACHIEVEMENTS ----
   # Use this section for certifications, veteran recognition, or specific
@@ -177,12 +199,12 @@ params:
     enable: true
     title: "Background & Recognition"
     items:
+      - title: "MTTR Reduction & Reliability Engineering: 99.x% Availability"
+        content: "Always Lead or Sr. of a team that Helped maintain 99.x% availability across reservation platform services (2005-2026)"
+      - title: "SaFE/ITIL Practitioner"
+        content: "Certified ITIL & SaFE practitioner, with experience leading ITIL-based incident, change, and problem management for high-availability systems."
       - title: "U.S. Military Veteran"
         content: "Service background informing a disciplined, process-oriented approach to operations and incident response."
-      - title: "[ADD: Uptime/Availability Metric]"
-        content: "e.g. 'Helped maintain 99.9x% availability across reservation platform services in [year/period].'"
-      - title: "[ADD: Certification in progress or completed]"
-        content: "e.g. AWS Certified Solutions Architect, Terraform Associate, CKA — update as you complete them."
 
   # ---- PROJECTS / TECHNICAL ARTIFACTS ----
   # This is the section that differentiates you from a resume PDF.
@@ -233,15 +255,15 @@ params:
   # ---- CONTACT ----
   contact:
     enable: true
-    content: "Open to Lead/Senior SRE, Platform Engineering, and Cloud Infrastructure roles — remote or South Florida based. Reach out directly."
+    content: "Open to SRE Management, Incident/Change/Problem Management, Lead/Senior SRE, Platform Engineering, and Cloud Infrastructure roles — remote or hybrid (40/50; 50/50) South Florida based. Reach out directly."
     btnName: "Email Me"
-    btnLink: "mailto:YOUR_EMAIL@example.com"
+    btnLink: "mailto:mr.mynor.diaz@gmail.com"
 
   footer:
     recentPosts:
       enable: false
     socialNetworks:
-      github: https://github.com/YOUR-GITHUB-USERNAME
+      github: https://github.com/madxxi/
       linkedin: https://www.linkedin.com/in/mynor-diaz
 
   singlePages:
