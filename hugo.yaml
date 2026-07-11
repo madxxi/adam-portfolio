@@ -62,7 +62,7 @@ params:
       disableContact: false
 
   # ---- HERO ----
-  hero:
+hero:
     enable: true
     intro: "Hi, I'm"
     title: "Mynor A. Diaz."
@@ -75,32 +75,24 @@ params:
     image: /images/hero.svg
 
     bottomImage:
-      enable: true   
-    button:
       enable: true
-      name: "Download SR SRE Résumé"
-      url: "/documents/MynorDiaz-Lead_SreSRE-Resiliency and Operations_ND.pdf"
-      download: true
-      newPage: false
 
-    bottomImage:
-    button:
-      enable: true
-      name: "Download SRE Manager Résumé"
-      url: "/documents/MynorDiaz-Manager_ND.pdf"
-      download: true
-      newPage: false 
+    buttons:
+      - name: "Download SR SRE Résumé"
+        url: "/documents/MynorDiaz-Lead_SreSRE-Resiliency-and-Operations_ND.pdf"
+        download: true
+        newPage: false
+      - name: "Download SRE Manager Résumé"
+        url: "/documents/MynorDiaz-Manager_ND.pdf"
+        download: true
+        newPage: false
+      - name: "Download Service/Incident Manager Résumé"
+        url: "/documents/MynorDiazResume_Incident-Manager_ND.pdf"
+        download: true
+        newPage: false
 
-    bottomImage:
-    button:
-      enable: true    
-      name: "Download Service/Incident Manager Résumé"
-      url: "/documents/MynorDiazResume_Incident-Manager_ND.pdf"
-      download: true
-      newPage: false 
-
-      socialLinks:
-       fontAwesomeIcons:
+    socialLinks:
+      fontAwesomeIcons:
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/mynor-diaz
         - icon: fab fa-github
