@@ -81,14 +81,12 @@ params:
       url: "/documents/MynorDiaz-Lead_SreSRE-Resiliency and Operations_ND.pdf"
       download: true
       newPage: false
-    button:
-      enable: true
+
       name: "Download SRE Manager Résumé"
       url: "/documents/MynorDiaz-Manager_ND.pdf"
       download: true
       newPage: false 
-    button:
-      enable: true
+
       name: "Download Service/Incident Manager Résumé"
       url: "/documents/MynorDiazResume_Incident-Manager_ND.pdf"
       download: true
@@ -108,7 +106,7 @@ params:
     enable: true
     title: "About Me"
     image: "/images/me.png"
-    content: |-
+    content: 
       I'm a Lead Systems Engineer with 20+ years of experience across site reliability
       engineering, platform operations, and observability tooling, most recently at
       **Amadeus**, working within high-availability global airline reservation infrastructure.
@@ -171,7 +169,6 @@ params:
               - Via team efforts, streamlined incident routing and response through ServiceNow, improving by at least 10% 
               the mean time to acknowledge (MTTA) and mean time to resolve (MTTR) for critical incidents, and with it also facilitating automation.
 
-        jobs:
           - name: "Sre SRE (Unix/Linux) / Lead Systems Engineer"
             date: "Oct 2004 - Jun 2008 / Jul 2008 - Dec 2018"
             info:
