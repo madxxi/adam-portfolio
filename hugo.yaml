@@ -62,7 +62,7 @@ params:
       disableContact: false
 
   # ---- HERO ----
-hero:
+  hero:
     enable: true
     intro: "Hi, I'm"
     title: "Mynor A. Diaz."
@@ -96,9 +96,16 @@ hero:
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/mynor-diaz
         - icon: fab fa-github
-          url: https://github.com/YOUR-GITHUB-USERNAME
+          url: https://github.com/madxxi/
         - icon: fa fa-envelope
           url: mailto:mr.mynor.diaz@gmail.com
+      # customIcons uses image paths for icon assets. Add or update entries here with
+      # `icon` pointing to a local image file in `static/`, and `url` pointing to the link.
+      customIcons:
+        - icon: /images/icons/resume.svg
+          url: /documents/MynorDiaz-Lead_SreSRE-Resiliency-and-Operations_ND.pdf
+        - icon: /images/icons/manager.svg
+          url: /documents/MynorDiaz-Manager_ND.pdf
 
   # ---- ABOUT ----
   about:

@@ -18,9 +18,16 @@
                 </p>
                 <div class="row">
                     <div class="col-auto h-100">
-                        {{ if .Site.Params.hero.button.enable }}
+                        {{ with .Site.Params.hero.buttons }}
+                        {{ range . }}
+                        <a href="{{ .url }}" class="btn me-2" {{ cond .download "download" "" }}
+                            {{ if .newPage | default true }}target="_blank"{{ end }}>
+                            {{ .name }}
+                        </a>
+                        {{ end }}
+                        {{ else if .Site.Params.hero.button.enable }}
                         <a href="{{ .Site.Params.hero.button.url }}" class="btn" {{ cond .Site.Params.hero.button.download "download" "" }}
-			  {{ if .Site.Params.hero.button.newPage | default true }}
+                          {{ if .Site.Params.hero.button.newPage | default true }}
                           target="_blank"
                           {{ end }}>
                             {{ $hero.button.name | default .Site.Params.hero.button.name }}
