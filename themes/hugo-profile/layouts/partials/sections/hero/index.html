@@ -27,7 +27,7 @@
 
                         {{- if $heroButtons }}
                             {{- range $heroButtons }}
-                                {{- if .enable }}
+                                {{- if .enable | default true }}
                                     <a href="{{ .url }}" class="btn" {{ cond .download "download" "" }}{{ if .newPage | default true }} target="_blank"{{ end }}>
                                         {{ .name }}
                                     </a>

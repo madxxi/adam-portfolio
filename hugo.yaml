@@ -37,7 +37,7 @@ params:
 
   theme:
     disableThemeToggle: false
-    defaultTheme: "auto"
+    defaultTheme: "light"
 
   font:
     fontSize: 1rem
@@ -76,18 +76,21 @@ params:
     bottomImage:
       enable: true
     buttons:
-      - name: "Lead/Senior SRE Resume"
+      - enable: true
+        name: "Lead/Senior SRE Resume"
         url: "/documents/MynorDiaz-Lead_SreSRE-Resiliency-Operations_ND.pdf"
         download: true
         newPage: true
-      - name: "SRE Manager Resume"
+      - enable: true
+        name: "SRE Manager Resume"
         url: "/documents/MynorDiaz-Manager_ND.pdf"
         download: true
         newPage: true
-      - name: "Incident Manager Resume"
+      - enable: true
+        name: "Incident Manager Resume"
         url: "/documents/MynorDiazResume_Incident-Manager_ND.pdf"
         download: true
-        newPage: true      
+        newPage: true
 
     socialLinks:
       fontAwesomeIcons:
