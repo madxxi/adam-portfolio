@@ -75,12 +75,20 @@ params:
     image: /images/hero.svg
     bottomImage:
       enable: true
-    button:
-      enable: true
-      name: "Lead/Senior SRE Resume"
-      url: "/documents/MynorDiaz-Lead_SreSRE-Resiliency-Operations_ND.pdf"
-      download: true
-      newPage: false
+    buttons:
+      - name: "Lead/Senior SRE Resume"
+        url: "/documents/MynorDiaz-Lead_SreSRE-Resiliency-Operations_ND.pdf"
+        download: true
+        newPage: true
+     - name: "SRE Manager Resume"
+        url: "/documents/MynorDiaz-Manager_ND.pdf"
+        download: true
+        newPage: true
+      - name: "Incident Manager Resume"
+        url: "/documents/MynorDiazResume_Incident-Manager_ND.pdf"
+        download: true
+        newPage: true      
+
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-linkedin
