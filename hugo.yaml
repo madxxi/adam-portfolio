@@ -37,7 +37,7 @@ params:
 
   theme:
     disableThemeToggle: false
-    defaultTheme: "dark"
+    defaultTheme: "PaperMod"
 
   font:
     fontSize: 1rem
@@ -106,6 +106,7 @@ params:
           url: /documents/MynorDiaz-Lead_SreSRE-Resiliency-and-Operations_ND.pdf
         - icon: /images/icons/manager.svg
           url: /documents/MynorDiaz-Manager_ND.pdf
+
 
   # ---- ABOUT ----
   about:
