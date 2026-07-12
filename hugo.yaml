@@ -80,7 +80,7 @@ params:
         url: "/documents/MynorDiaz-Lead_SreSRE-Resiliency-Operations_ND.pdf"
         download: true
         newPage: true
-     - name: "SRE Manager Resume"
+      - name: "SRE Manager Resume"
         url: "/documents/MynorDiaz-Manager_ND.pdf"
         download: true
         newPage: true
