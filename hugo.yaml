@@ -107,7 +107,6 @@ params:
         - icon: /images/icons/manager.svg
           url: /documents/MynorDiaz-Manager_ND.pdf
 
-
   # ---- ABOUT ----
   about:
     enable: true
