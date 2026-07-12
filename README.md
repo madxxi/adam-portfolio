@@ -72,4 +72,5 @@ If you ever want to preview changes before pushing, install Hugo locally
 hugo server -D
 ```
 
+
 Then open http://localhost:1313/adam-portfolio/
