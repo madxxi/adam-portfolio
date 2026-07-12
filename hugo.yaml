@@ -1,6 +1,6 @@
 baseURL: "https://madxxi.github.io/adam-portfolio/"
 languageCode: "en-us"
-title: "Mynor A. Diaz | Sr. Service Reliability Engineering"
+title: "Mynor A. Diaz | Site Reliability & Platform Engineering"
 theme: hugo-profile
 
 outputs:
@@ -28,7 +28,7 @@ Menus:
   main: []
 
 params:
-  title: "Mynor A. Diaz | Sr. Service Reliability Engineering"
+  title: "Mynor A. Diaz | Site Reliability & Platform Engineering"
   description: "Lead Systems Engineer with 20+ years in SRE, platform operations, and observability for high-availability, global-scale infrastructure."
   favicon: "/fav.png"
   useBootstrapCDN: false
@@ -37,7 +37,7 @@ params:
 
   theme:
     disableThemeToggle: false
-    defaultTheme: "PaperMod"
+    defaultTheme: "dark"
 
   font:
     fontSize: 1rem
@@ -73,46 +73,29 @@ params:
       I build alerting-as-code with Prometheus/PromQL, design Grafana dashboards that
       teams actually use, and treat incident response like a discipline, not a fire drill.
     image: /images/hero.svg
-
     bottomImage:
       enable: true
-
-    buttons:
-      - name: "Download SR SRE Résumé"
-        url: "/documents/MynorDiaz-Lead_SreSRE-Resiliency-and-Operations_ND.pdf"
-        download: true
-        newPage: false
-      - name: "Download SRE Manager Résumé"
-        url: "/documents/MynorDiaz-Manager_ND.pdf"
-        download: true
-        newPage: false
-      - name: "Download Service/Incident Manager Résumé"
-        url: "/documents/MynorDiazResume_Incident-Manager_ND.pdf"
-        download: true
-        newPage: false
-
+    button:
+      enable: true
+      name: "Download Résumé"
+      url: "/documents/adam-diaz-resume.pdf"
+      download: true
+      newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/mynor-diaz
         - icon: fab fa-github
-          url: https://github.com/madxxi/
+          url: https://github.com/YOUR-GITHUB-USERNAME
         - icon: fa fa-envelope
           url: mailto:mr.mynor.diaz@gmail.com
-      # customIcons uses image paths for icon assets. Add or update entries here with
-      # `icon` pointing to a local image file in `static/`, and `url` pointing to the link.
-      customIcons:
-        - icon: /images/icons/resume.svg
-          url: /documents/MynorDiaz-Lead_SreSRE-Resiliency-and-Operations_ND.pdf
-        - icon: /images/icons/manager.svg
-          url: /documents/MynorDiaz-Manager_ND.pdf
 
   # ---- ABOUT ----
   about:
     enable: true
     title: "About Me"
     image: "/images/me.png"
-    content: |
+    content: |-
       I'm a Lead Systems Engineer with 20+ years of experience across site reliability
       engineering, platform operations, and observability tooling, most recently at
       **Amadeus**, working within high-availability global airline reservation infrastructure.
@@ -175,6 +158,7 @@ params:
               - Via team efforts, streamlined incident routing and response through ServiceNow, improving by at least 10% 
               the mean time to acknowledge (MTTA) and mean time to resolve (MTTR) for critical incidents, and with it also facilitating automation.
 
+        jobs:
           - name: "Sre SRE (Unix/Linux) / Lead Systems Engineer"
             date: "Oct 2004 - Jun 2008 / Jul 2008 - Dec 2018"
             info:
