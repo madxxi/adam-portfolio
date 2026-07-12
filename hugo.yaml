@@ -30,7 +30,7 @@ Menus:
 params:
   title: "Mynor A. Diaz | Site Reliability & Platform Engineering"
   description: "Lead Systems Engineer with 20+ years in SRE, platform operations, and observability for high-availability, global-scale infrastructure."
-  favicon: "/images/Adam-UFGrad_2013.JPG"
+  favicon: "/images/fav.png"
   useBootstrapCDN: false
   mathjax: false
   animate: true
@@ -80,17 +80,17 @@ params:
         name: "Lead/Senior SRE Resume"
         url: "/documents/MynorDiaz-Lead_SreSRE-Resiliency-Operations_ND.pdf"
         download: true
-        newPage: true
+        newPage: false
       - enable: true
         name: "SRE Manager Resume"
         url: "/documents/MynorDiaz-Manager_ND.pdf"
         download: true
-        newPage: true
+        newPage: false
       - enable: true
         name: "Incident Manager Resume"
         url: "/documents/MynorDiazResume_Incident-Manager_ND.pdf"
         download: true
-        newPage: true
+        newPage: false
 
     socialLinks:
       fontAwesomeIcons:
