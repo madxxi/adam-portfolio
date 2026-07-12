@@ -28,7 +28,7 @@ Menus:
   main: []
 
 params:
-  title: "Mynor A. Diaz | Site Reliability & Platform Engineering"
+  title: "Mynor A. Diaz | Service Reliability & Platform Engineering"
   description: "Lead Systems Engineer with 20+ years in SRE, platform operations, and observability for high-availability, global-scale infrastructure."
   favicon: "/images/fav.png"
   useBootstrapCDN: false
@@ -64,15 +64,15 @@ params:
   # ---- HERO ----
   hero:
     enable: true
-    intro: "Hi, I'm"
+    intro: "Hi, Welcome to my portfolio site!"
     title: "Mynor A. Diaz."
     subtitle: "Lead Systems Engineer — SRE, Platform Ops & Observability"
     content: >-
       20+ years keeping high-availability, global-scale systems running. Most recently was leading reliability 
-      engineering for airline reservation infrastructure at Amadeus. I build alerting-as-code with Prometheus/PromQL, 
-      design Grafana dashboards that teams actually use, and treat incident response like a discipline, not a 
-      fire drill.
-    image: /images/hero.svg
+      engineering for airline reservation infrastructure at Amadeus IT Group. I helped build alerting-as-code 
+      based on Templates with Prometheus/PromQL, assisted with design of Grafana dashboards that teams actually use, 
+      and treat incident response like a discipline, not a fire drill.
+    image: "/images/Adam-HeroPic.JPG"
     bottomImage:
       enable: true
     buttons:
@@ -105,7 +105,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/Adam-AboutPic.jpg"
     content: |-
       I'm a Lead Systems Engineer with 20+ years of experience across site reliability
       engineering, platform operations, and observability tooling, most recently at
