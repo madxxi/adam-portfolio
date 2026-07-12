@@ -78,7 +78,7 @@ params:
     button:
       enable: true
       name: "Lead/Senior SRE Resume"
-      url: "/documents/MynorDiaz-Lead_SreSRE-Resiliency and Operations_ND.pdf"
+      url: "/documents/MynorDiaz-Lead_SreSRE-Resiliency-Operations_ND.pdf"
       download: true
       newPage: false
     socialLinks:
