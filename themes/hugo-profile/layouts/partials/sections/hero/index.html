@@ -18,14 +18,22 @@
                 </p>
                 <div class="row">
                     <div class="col-auto h-100">
-                        {{ if .Site.Params.hero.button.enable }}
-                        <a href="{{ .Site.Params.hero.button.url }}" class="btn" {{ cond .Site.Params.hero.button.download "download" "" }}
-			  {{ if .Site.Params.hero.button.newPage | default true }}
-                          target="_blank"
-                          {{ end }}>
-                            {{ $hero.button.name | default .Site.Params.hero.button.name }}
-                        </a>
-                        {{ end }}
+                        {{- $heroButtons := .Site.Params.hero.buttons -}}
+                        {{- if not $heroButtons -}}
+                            {{- with .Site.Params.hero.button -}}
+                                {{- $heroButtons = slice . -}}
+                            {{- end -}}
+                        {{- end -}}
+
+                        {{- if $heroButtons }}
+                            {{- range $heroButtons }}
+                                {{- if .enable }}
+                                    <a href="{{ .url }}" class="btn" {{ cond .download "download" "" }}{{ if .newPage | default true }} target="_blank"{{ end }}>
+                                        {{ .name }}
+                                    </a>
+                                {{- end }}
+                            {{- end }}
+                        {{- end }}
                     </div>
                     <div class="col-auto px-0 h-100">
                         {{- partial "sections/hero/social.html" . -}}
