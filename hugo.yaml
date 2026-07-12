@@ -72,7 +72,7 @@ params:
       engineering for airline reservation infrastructure at Amadeus IT Group. I helped build alerting-as-code 
       based on Templates with Prometheus/PromQL, assisted with design of Grafana dashboards that teams actually use, 
       and treat incident response like a discipline, not a fire drill.
-    image: "/images/Adam-HeroPic.JPG"
+    image: "/images/Adam-HeroPic.jpg"
     bottomImage:
       enable: true
     buttons:
@@ -97,7 +97,7 @@ params:
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/mynor-diaz
         - icon: fab fa-github
-          url: https://github.com/YOUR-GITHUB-USERNAME
+          url: https://github.com/madxxi/
         - icon: fa fa-envelope
           url: mailto:mr.mynor.diaz@gmail.com
 
