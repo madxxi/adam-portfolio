@@ -195,23 +195,23 @@ params:
         school:
           name: "University of Florida"
           url: "https://www.ufl.edu"
-      featuredLink:
-        enable: true
-        name: "Graduation Certificate: Executive Business Administration (EMBA)"
-        url: "/documents/MDiaz-UF-MBA-2013.pdf"
-        download: false
-        newPage: true
+        featuredLink:
+          enable: true
+          name: "Graduation Certificate: Executive Business Administration (EMBA)"
+          url: "/documents/MDiaz-UF-MBA-2013.pdf"
+          download: true
+          newPage: false
 
       - title: "MS, Computer Information Systems - 2007"
         school:
           name: "Nova Southeastern University"
           url: "https://www.nova.edu"
-      featuredLink:
-        enable: true
-        name: "Graduation Certificate: Computer Information Systems (MS CIS)"
-        url: "/documents/MDiaz-NovaUniversity_MCIS_OCT2007.pdf"
-        download: false
-        newPage: true
+        featuredLink:
+          enable: true
+          name: "Graduation Certificate: Computer Information Systems (MS CIS)"
+          url: "/documents/MDiaz-NovaUniversity_MCIS_OCT2007.pdf"
+          download: true
+          newPage: false
 
   # ---- ACHIEVEMENTS ----
   # Use this section for certifications, veteran recognition, or specific
