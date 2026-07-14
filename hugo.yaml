@@ -111,15 +111,22 @@ params:
       engineering, platform operations, and observability tooling, most recently at
       **Amadeus**, working within high-availability global airline reservation infrastructure.
 
-      My focus is on making systems observable and incidents boring: alerting-as-code with
-      Prometheus and PromQL, Grafana dashboards designed for the people who actually get
-      paged, git-based workflows for infrastructure changes, and clean incident routing
-      through ServiceNow. I hold an MS in Computer Information Systems from Nova
-      Southeastern University and an MBA from the University of Florida, and I'm a U.S.
-      military veteran.
+      I have also delved, as part of that experience, into the ITIL model realm dealing with
+      incident, change, and problem management, and led teams in a 24/7 environment to maintain 
+      99.x% availability for production mission-critical systems.
 
-      I'm currently open to Lead/Senior SRE, Platform Engineering, and Cloud Infrastructure
-      roles — remote or based in South Florida.
+      My focus is on making systems observable and incidents boring: alerting-as-code with
+      Prometheus and PromQL, Grafana dashboards, and helping design and build systems that are 
+      centered on prevention and self-recovery and actually reach the people who actually get
+      things corrected, with git-based workflows for infrastructure changes, and clean incident 
+      routing through ServiceNow or another incident management system. I hold an MS in Computer 
+      Information Systems from Nova Southeastern University and a MBA from the University of Florida, 
+      and I'm a U.S. military veteran.
+
+      I'm currently open to Lead/Senior SRE, Platform Engineering, and Cloud Infrastructure roles. 
+      I am also available for Incident/Change/Problem Management as well as SRE Management roles, 
+      primarily remote or hybrid (40/60) based in South Florida in Broward County or Northern Miami Dade.
+
     skills:
       enable: true
       title: "Core tools and technologies:"
@@ -212,6 +219,24 @@ params:
           url: "/documents/MDiaz-NovaUniversity_MCIS_OCT2007.pdf"
           download: true
           newPage: false
+
+  # ---- CERTIFICATIONS ----
+  certifications:
+    enable: true
+    title: "Certifications"
+    items:
+      - title: "ITIL Practitioner" 
+        issuer: "EXIN International"
+        date:  "Feb 2007"
+        content: "Certified ITIL Practitioner"
+        documnentUrl: "/documents/MDiaz_ITILCertificate_FEB2007.pdf"
+        download: true
+        newPage: false        
+#        verifyUrl: "https://www.exin.com/certificates/verify?certificate=MDiaz_ITILCertificate_FEB2007.pdf"
+      - title: "SaFE Practitioner"
+        content: "Certified SaFE Practitioner, with experience leading Agile teams in a SAFe framework for high-availability systems."
+      - title: "U.S. Military Veteran"
+        content: "Service background informing a disciplined, process-oriented approach to operations and incident response." 
 
   # ---- ACHIEVEMENTS ----
   # Use this section for certifications, veteran recognition, or specific
