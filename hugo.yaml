@@ -105,7 +105,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/Adam-AboutPic.jpg"
+    image: "/images/Adam-CzechRepublic.jpg"
     content: |-
       I'm a Lead Systems Engineer with 20+ years of experience across site reliability
       engineering, platform operations, and observability tooling, most recently at
@@ -191,16 +191,27 @@ params:
   education:
     enable: true
     items:
-      - title: "Executive, Business Administration (EMBA)"
+      - title: "Executive, Business Administration (EMBA) - 2013"
         school:
           name: "University of Florida"
           url: "https://www.ufl.edu"
+      featuredLink:
+        enable: true
+        name: "Graduation Certificate: Executive Business Administration (EMBA)"
+        url: "/documents/MDiaz-UF-MBA-2013.pdf"
+        download: false
+        newPage: true
 
-      - title: "MS, Computer Information Systems"
+      - title: "MS, Computer Information Systems - 2007"
         school:
           name: "Nova Southeastern University"
           url: "https://www.nova.edu"
-
+      featuredLink:
+        enable: true
+        name: "Graduation Certificate: Computer Information Systems (MS CIS)"
+        url: "/documents/MDiaz-NovaUniversity_MCIS_OCT2007.pdf"
+        download: false
+        newPage: true
 
   # ---- ACHIEVEMENTS ----
   # Use this section for certifications, veteran recognition, or specific
@@ -260,7 +271,7 @@ params:
           - "Process"
         links:
           - icon: fab fa-github
-            url: "https://github.com/YOUR-GITHUB-USERNAME/incident-runbook-template"
+            url: "https://github.com/YOUR-GITHUB-USERNAME/Adam-incident-runbook-template"
 
   # ---- CONTACT ----
   contact:
