@@ -225,18 +225,33 @@ params:
     enable: true
     title: "Certifications"
     items:
+      - title: "Microsoft Certified: Azure Data Fundamentals"
+        issuer: "Microsoft"
+        date:  "Sep 25, 2023"
+        image: "/images/certifications/MS-certified-fundamentals-badge.svg"    # optional badge; omit the line entirely if you don't have one
+        content: "Certified Azure Data Fundamentals"
+        documnentUrl: "/documents/certifications/MDiaz-MS_Azure_Data_Fundamentals_Sep2023.pdf"
+        download: true
+        newPage: false      
+        verifyUrl: "https://learn.microsoft.com/en-us/users/mynordiaz-2519/credentials/1efa74aecb812ddb"
       - title: "ITIL Practitioner" 
         issuer: "EXIN International"
         date:  "Feb 2007"
+        image: "/images/certifications/ITIL.png"    # optional badge; omit the line entirely if you don't have one
         content: "Certified ITIL Practitioner"
-        documnentUrl: "/documents/MDiaz_ITILCertificate_FEB2007.pdf"
+        documnentUrl: "/documents/certifications/MDiaz_ITILCertificate_FEB2007.pdf"
         download: true
         newPage: false        
 #        verifyUrl: "https://www.exin.com/certificates/verify?certificate=MDiaz_ITILCertificate_FEB2007.pdf"
-      - title: "SaFE Practitioner"
-        content: "Certified SaFE Practitioner, with experience leading Agile teams in a SAFe framework for high-availability systems."
-      - title: "U.S. Military Veteran"
-        content: "Service background informing a disciplined, process-oriented approach to operations and incident response." 
+      - title: "SAFe Practitioner"
+        issuer: "SAFe by Scaled Agile"
+        date:  "Feb 2021"
+        image: "/images/certifications/SAFe.png"    # optional badge; omit the line entirely if you don't have one
+        content: "Certified SAFe Practitioner"
+        documnentUrl: "/documents/certifications/MDiaz-SAFe-Practitione Certification_JAN2021.pdf"
+        download: true
+        newPage: false        
+#        verifyUrl: "https://www.exin.com/certificates/verify?certificate=MDiaz_SAFePractitioner_Certificate_JAN2021.pdf"
 
   # ---- ACHIEVEMENTS ----
   # Use this section for certifications, veteran recognition, or specific
