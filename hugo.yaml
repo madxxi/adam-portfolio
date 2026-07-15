@@ -301,7 +301,9 @@ params:
     title: "Technical Artifacts"
     items:
       - title: "PromQL Alerting Pattern Library"
-        content: "A sanitized collection of Prometheus alerting rules and PromQL query patterns for common SRE scenarios — latency, saturation, error budgets, and multi-window burn-rate alerts."
+        content: "A sanitized collection of Prometheus alerting rules and PromQL query 
+                  patterns for common SRE scenarios — latency, saturation, error budgets, 
+                  and multi-window burn-rate alerts."
         image: "/images/projects/prometheus.png"
         featured:
           name: "View Repo"
@@ -315,7 +317,8 @@ params:
             url: "https://github.com/YOUR-GITHUB-USERNAME/promql-alerting-patterns"
 
       - title: "Grafana Dashboard Gallery"
-        content: "Sanitized Grafana dashboard exports (JSON) demonstrating layout, variable templating, and alerting integration for on-call visibility."
+        content: "Sanitized Grafana dashboard exports (JSON) demonstrating layout, 
+                  variable templating, and alerting integration for on-call visibility."
         image: "/images/projects/grafana-logo.png"
         featured:
           name: "View Repo"
@@ -328,7 +331,8 @@ params:
             url: "https://github.com/madxxi/grafana-dashboard-gallery"
 
       - title: "Incident Response Runbook Template"
-        content: "A generalized incident-response runbook and postmortem template reflecting ServiceNow-based routing and escalation practices for high-availability environments."
+        content: "A generalized incident-response runbook and postmortem template reflecting 
+                 ServiceNow-based routing and escalation practices for high-availability environments."
         image: "/images/projects/incident-management-workflow.png"
         badges:
           - "Incident Response"
