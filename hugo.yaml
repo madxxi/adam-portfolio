@@ -131,16 +131,23 @@ params:
       enable: true
       title: "Core tools and technologies:"
       items:
-        - "Prometheus / PromQL"
+        - "Leadership / Management / Mentoring"
+        - "Training / Onboarding"
+        - "Prometheus / PromQL / Thanos / Alert Management"     
         - "Grafana"
-        - "Terraform"
-        - "AWS"
-        - "Git"
+        - "Bitbucket / GitHub"
+        - "AI Augmented Engineering (LLMs, ChatGPT, Copilot, Claude, etc.)"
         - "ServiceNow"
         - "Kubernetes"
         - "Linux"
         - "CI/CD"
-        - "Incident Response"
+        - "Automation / Scripting (Go, Shell, Python)"
+        - "Cloud (Azure, OpenShift)"
+        - "Incident Management"
+        - "Change Management"
+        - "Problem Management"
+        - "Jira / Confluence"
+        - "Terraform"
 
   # ---- EXPERIENCE ----
   # Add earlier roles below the Amadeus entry as additional "company" blocks.
@@ -234,6 +241,15 @@ params:
         download: true
         newPage: false      
         verifyUrl: "https://learn.microsoft.com/en-us/users/mynordiaz-2519/credentials/1efa74aecb812ddb"
+      - title: "Microsoft Certified: Azure Fundamentals"
+        issuer: "Microsoft"
+        date:  "May 23, 2022"
+        image: "/images/certifications/MS-certified-fundamentals-badge.svg"    # optional badge; omit the line entirely if you don't have one
+        content: "Certified Azure Data Fundamentals"
+#        documentUrl: "/documents/certifications/MDiaz-MS_Azure_Data_Fundamentals_Sep2023.pdf"
+#        download: true
+#        newPage: false      
+        verifyUrl: "https://www.credly.com/badges/f2ea7614-1112-4d3d-8016-3a96fc4abe7f/public_url"        
       - title: "ITIL Practitioner" 
         issuer: "EXIN International"
         date:  "Feb 2007"
@@ -249,6 +265,15 @@ params:
         image: "/images/certifications/SAFe.png"    # optional badge; omit the line entirely if you don't have one
         content: "Certified SAFe Practitioner"
         documentUrl: "/documents/certifications/MDiaz-SAFe-Practitioner_Certification_JAN2021.pdf"
+        download: true
+        newPage: false        
+#        verifyUrl: "https://www.exin.com/certificates/verify?certificate=MDiaz_SAFePractitioner_Certificate_JAN2021.pdf"
+      - title: "Predictive Analytics and Data Mining"
+        issuer: "The Modeling Agency"
+        date:  "Aug 2013"
+        image: "/images/certifications/Data-Mining.png"    # optional badge; omit the line entirely if you don't have one
+        content: "Data Mining and Predictive Analytics Certificate from The Modeling Agency"
+        documentUrl: "/documents/certifications/MDiaz_PredictiveAnalytics-DataMining_CompletionCert_Aug2013.pdf"
         download: true
         newPage: false        
 #        verifyUrl: "https://www.exin.com/certificates/verify?certificate=MDiaz_SAFePractitioner_Certificate_JAN2021.pdf"
