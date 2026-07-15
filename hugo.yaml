@@ -230,7 +230,7 @@ params:
         date:  "Sep 25, 2023"
         image: "/images/certifications/MS-certified-fundamentals-badge.svg"    # optional badge; omit the line entirely if you don't have one
         content: "Certified Azure Data Fundamentals"
-        documnentUrl: "/documents/certifications/MDiaz-MS_Azure_Data_Fundamentals_Sep2023.pdf"
+        documentUrl: "/documents/certifications/MDiaz-MS_Azure_Data_Fundamentals_Sep2023.pdf"
         download: true
         newPage: false      
         verifyUrl: "https://learn.microsoft.com/en-us/users/mynordiaz-2519/credentials/1efa74aecb812ddb"
@@ -239,7 +239,7 @@ params:
         date:  "Feb 2007"
         image: "/images/certifications/ITIL.png"    # optional badge; omit the line entirely if you don't have one
         content: "Certified ITIL Practitioner"
-        documnentUrl: "/documents/certifications/MDiaz_ITILCertificate_FEB2007.pdf"
+        documentUrl: "/documents/certifications/MDiaz_ITILCertificate_FEB2007.pdf"
         download: true
         newPage: false        
 #        verifyUrl: "https://www.exin.com/certificates/verify?certificate=MDiaz_ITILCertificate_FEB2007.pdf"
@@ -248,7 +248,7 @@ params:
         date:  "Feb 2021"
         image: "/images/certifications/SAFe.png"    # optional badge; omit the line entirely if you don't have one
         content: "Certified SAFe Practitioner"
-        documnentUrl: "/documents/certifications/MDiaz-SAFe-Practitione Certification_JAN2021.pdf"
+        documentUrl: "/documents/certifications/MDiaz-SAFe-Practitioner_Certification_JAN2021.pdf"
         download: true
         newPage: false        
 #        verifyUrl: "https://www.exin.com/certificates/verify?certificate=MDiaz_SAFePractitioner_Certificate_JAN2021.pdf"

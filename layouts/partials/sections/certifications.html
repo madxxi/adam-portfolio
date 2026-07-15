@@ -6,15 +6,16 @@
         <div class="px-0 px-md-5 px-lg-5">
             <div class="row justify-content-center px-3 px-md-5 px-lg-5">
                 {{ range $certifications.items | default .Site.Params.certifications.items }}
-                <div class="col-lg-4 col-md-6 my-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3">
                     <div class="card my-3 h-100 p-3" title="{{ .title }}">
                         {{ if .image }}
-                        <div class="card-head">
-                            <img class="card-img-top" src="{{ .image | strings.TrimPrefix "/" | relURL }}" alt="{{ .title }} badge">
+                        <div class="card-head d-flex justify-content-center align-items-center" style="height: 100px;">
+                            <img src="{{ .image | strings.TrimPrefix "/" | relURL }}" alt="{{ .title }} badge"
+                                style="max-height: 90px; max-width: 90px; width: auto; height: auto; object-fit: contain;">
                         </div>
                         {{ end }}
                         <div class="card-body bg-transparent">
-                            <h5 class="card-title bg-transparent">{{ .title }}</h5>
+                            <h5 class="card-title bg-transparent" style="font-size: 1rem;">{{ .title }}</h5>
                             {{ if or .issuer .date }}
                             <div class="card-subtitle secondary-font mb-2">
                                 {{ .issuer }}{{ if and .issuer .date }} &middot; {{ end }}{{ .date }}
