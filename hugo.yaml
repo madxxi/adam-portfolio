@@ -286,9 +286,11 @@ params:
     title: "Background & Recognition"
     items:
       - title: "MTTR Reduction & Reliability Engineering: 99.x% Availability"
-        content: "Always Lead or Sr. of a team that Helped maintain 99.x% availability across reservation platform services (2005-2026)"
+        content: "Always Lead or Sr. of a team that Helped maintain 99.x% 
+                 availability across reservation platform services (2005-2026)"
       - title: "SaFE/ITIL Practitioner"
-        content: "Certified ITIL & SaFE practitioner, with experience leading ITIL-based incident, change, and problem management for high-availability systems."
+        content: "Certified ITIL & SaFE practitioner, with experience leading 
+                 ITIL-based incident, change, and problem management for high-availability systems."
       - title: "U.S. Military Veteran"
         content: "Service background informing a disciplined, process-oriented approach to operations and incident response."
 
@@ -302,21 +304,21 @@ params:
     items:
       - title: "PromQL Alerting Pattern Library"
         content: "A sanitized collection of Prometheus alerting rules and PromQL query 
-                  patterns for common SRE scenarios — latency, saturation, error budgets, 
-                  and multi-window burn-rate alerts."
+                  patterns for common SRE scenarios: latency, saturation, errors, pod states,
+                  infrastructure health, and more."
         image: "/images/projects/prometheus.png"
         featured:
           name: "View Repo"
-          link: "https://github.com/YOUR-GITHUB-USERNAME/promql-alerting-patterns"
+          link: "https://github.com/madxxi/promql-alerting-patterns"
         badges:
           - "Prometheus"
           - "PromQL"
           - "Alerting-as-Code"
         links:
           - icon: fab fa-github
-            url: "https://github.com/YOUR-GITHUB-USERNAME/promql-alerting-patterns"
+            url: "https://madxxi.github.io/prometheus-alerting-patterns/"
 
-      - title: "Grafana Dashboard Gallery"
+      - title: "Grafana Dashboard Gallery (WIP)"
         content: "Sanitized Grafana dashboard exports (JSON) demonstrating layout, 
                   variable templating, and alerting integration for on-call visibility."
         image: "/images/projects/grafana-logo.png"
@@ -334,13 +336,16 @@ params:
         content: "A generalized incident-response runbook and postmortem template reflecting 
                  ServiceNow-based routing and escalation practices for high-availability environments."
         image: "/images/projects/incident-management-workflow.png"
+        featured:
+          name: "View Repo"
+          link: "https://github.com/madxxi/incident-runbook-templates"
         badges:
           - "Incident Response"
           - "ServiceNow"
           - "Process"
         links:
           - icon: fab fa-github
-            url: "https://github.com/madxxi/incident-runbook-templates"
+            url: "https://madxxi.github.io/incident-runbook-templates/"
 
   # ---- CONTACT ----
   contact:
