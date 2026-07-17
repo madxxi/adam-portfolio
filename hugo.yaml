@@ -309,7 +309,7 @@ params:
         image: "/images/projects/prometheus.png"
         featured:
           name: "View Repo"
-          link: "https://github.com/madxxi/promql-alerting-patterns"
+          link: "https://github.com/madxxi/prometheus-alerting-patterns"
         badges:
           - "Prometheus"
           - "PromQL"
