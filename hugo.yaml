@@ -323,7 +323,7 @@ params:
                   variable templating, and alerting integration for on-call visibility."
         image: "/images/projects/grafana-logo.png"
         featured:
-          name: "View Repo"
+          name: "View Repo (WIP: Not yet functional)"
           link: "https://github.com/madxxi/grafana-dashboard-gallery"
         badges:
           - "Grafana"
