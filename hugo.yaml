@@ -119,13 +119,13 @@ params:
       Prometheus and PromQL, Grafana dashboards, and helping design and build systems that are 
       centered on prevention and self-recovery and actually reach the people who actually get
       things corrected, with git-based workflows for infrastructure changes, and clean incident 
-      routing through ServiceNow or another incident management system. I hold an MS in Computer 
+      routing through ServiceNow or another incident management system. I hold a MS in Computer 
       Information Systems from Nova Southeastern University and a MBA from the University of Florida, 
       and I'm a U.S. military veteran.
 
       I'm currently open to Lead/Senior SRE, Platform Engineering, and Cloud Infrastructure roles. 
       I am also available for Incident/Change/Problem Management as well as SRE Management roles, 
-      primarily remote or hybrid (40/60) based in South Florida in Broward County or Northern Miami Dade.
+      primarily remote, but open to hybrid (40/60) based in South Florida in Broward County or Northern Miami Dade.
 
     skills:
       enable: true
@@ -304,8 +304,8 @@ params:
     items:
       - title: "PromQL Alerting Pattern Library"
         content: "A sanitized collection of Prometheus alerting rules and PromQL query 
-                  patterns for common SRE scenarios: latency, saturation, errors, pod states,
-                  infrastructure health, and more."
+                  patterns for common SRE scenarios: latency, errors, saturation, pod states,
+                  infrastructure health, availabilty, etc."
         image: "/images/projects/prometheus.png"
         featured:
           name: "View Repo"
@@ -320,11 +320,14 @@ params:
 
       - title: "Grafana Dashboard Gallery (WIP)"
         content: "Sanitized Grafana dashboard exports (JSON) demonstrating layout, 
-                  variable templating, and alerting integration for on-call visibility."
+                  variable templating, and alerting integration for on-call visibility"
+#        documentUrl: "[See Amadeus IT Group Observability Case Study](https://www.redhat.com/en/blog/amadeus-it-group-observability-openshift)"
         image: "/images/projects/grafana-logo.png"
         featured:
           name: "View Repo (WIP: Not yet functional)"
           link: "https://github.com/madxxi/grafana-dashboard-gallery"
+#          name: "Amadeus IT Group Observability Case"
+#          link: "https://www.redhat.com/en/blog/amadeus-it-group-observability-openshift"
         badges:
           - "Grafana"
           - "Observability"
