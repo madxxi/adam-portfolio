@@ -22,19 +22,26 @@
                             {{ .content }}
                         </div>
                     </div>
-                    {{ if or (.links) (.featured) }}
+                    {{ if or (.links) (.featured) (.featuredLinks) }}
                     <div class="card-footer py-3">
                         {{ range .links }}
                         <span class="m-1 mx-2">
-                            <a href="{{ .url }}" target="_blank">
+                            <a href="{{ .url | strings.TrimPrefix "/" | relURL }}" target="_blank">
                                 <i class="{{ .icon }}"></i>
                             </a>
                         </span>
                         {{ end }}
                         {{ if .featured }}
-                        <span class="float-end">
-                            <a class="btn btn-sm" href="{{ .featured.link }}" target="_blank">
+                        <span class="float-end m-1">
+                            <a class="btn btn-sm" href="{{ .featured.link | strings.TrimPrefix "/" | relURL }}" target="_blank">
                                 {{ .featured.name }}
+                            </a>
+                        </span>
+                        {{ end }}
+                        {{ range .featuredLinks }}
+                        <span class="float-end m-1">
+                            <a class="btn btn-sm" href="{{ .link | strings.TrimPrefix "/" | relURL }}" target="_blank">
+                                {{ .name }}
                             </a>
                         </span>
                         {{ end }}
@@ -65,7 +72,7 @@
                     <div class="card-footer py-3">
                         {{ range .Params.links }}
                         <span class="m-1 mx-2">
-                            <a href="{{ .url }}">
+                            <a href="{{ .url | strings.TrimPrefix "/" | relURL }}">
                                 <i class="{{ .icon }}"></i>
                             </a>
                         </span>
