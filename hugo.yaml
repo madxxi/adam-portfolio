@@ -66,12 +66,13 @@ params:
     enable: true
     intro: "Hi, Welcome to my portfolio site!"
     title: "Mynor A. Diaz."
-    subtitle: "Lead Systems Engineer — SRE, Platform Ops & Observability"
+    subtitle: "Lead Systems Engineer — SRE, Platform Ops & Observability, Incident Management, Change Management, Problem Management!"
     content: >-
       20+ years keeping high-availability, global-scale systems running. Most recently was leading reliability 
       engineering for airline reservation infrastructure at Amadeus IT Group. I helped build alerting-as-code 
       based on Templates with Prometheus/PromQL, assisted with design of Grafana dashboards that teams actually use, 
-      and treat incident response like a discipline, not a fire drill.
+      and treat incident response like a discipline, not a fire drill.  
+      Remember this:  It's not only about fixing the problem, it's about preventing it from happening again.  
     image: "/images/Adam-HeroPic.jpg"
     bottomImage:
       enable: true
@@ -100,6 +101,8 @@ params:
           url: https://github.com/madxxi
         - icon: fa fa-envelope
           url: mailto:mr.mynor.diaz@gmail.com
+        - icon: fas fa-thumbs-up
+          url: "/documents/Adam-RecommendationsReceived_JUL2026.pdf"
 
   # ---- ABOUT ----
   about:
@@ -126,6 +129,10 @@ params:
       I'm currently open to Lead/Senior SRE, Platform Engineering, and Cloud Infrastructure roles. 
       I am also available for Incident/Change/Problem Management as well as SRE Management roles, 
       primarily remote, but open to hybrid (40/60) based in South Florida in Broward County or Northern Miami Dade.
+
+      Remember, it's not only what I can personally bring into the table, which is enormously important! 
+      I also know a strong network of SREs, platform engineers, cloud architects, and other experts that can 
+      solidify and help build a stronger team.
 
     skills:
       enable: true
