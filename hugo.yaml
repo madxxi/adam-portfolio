@@ -79,17 +79,17 @@ params:
     buttons:
       - enable: true
         name: "Lead/Senior SRE Resume"
-        url: "/documents/MynorDiaz-Lead_SreSRE-Resiliency-Operations_ND.pdf"
+        url: "/documents/MynorDiaz-Lead_SreSRE-ResiliencyOperations_ND.pdf"
         download: true
         newPage: false
       - enable: true
         name: "SRE Manager Resume"
-        url: "/documents/MynorDiaz-Manager_ND.pdf"
+        url: "/documents/MynorDiaz_SRE-Management_ND.pdf"
         download: true
         newPage: false
       - enable: true
         name: "Incident Manager Resume"
-        url: "/documents/MynorDiazResume_Incident-Manager_ND.pdf"
+        url: "/documents/MynorDiaz_Incident-Manager_ND.pdf"
         download: true
         newPage: false
 
