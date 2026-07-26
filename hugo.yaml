@@ -65,7 +65,7 @@ params:
   hero:
     enable: true
     intro: "Hi, Welcome to my portfolio site!"
-    title: "Mynor A. Diaz."
+    title: "Mynor A. Diaz"
     subtitle: "Lead Systems Engineer — SRE, Platform Ops & Observability, Incident Management, Change Management, Problem Management!"
     content: >-
       20+ years keeping high-availability, global-scale systems running. Most recently was leading reliability 
