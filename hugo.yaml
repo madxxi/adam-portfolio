@@ -66,7 +66,7 @@ params:
     enable: true
     intro: "Hi, Welcome to my portfolio site!"
     title: "Mynor A. Diaz"
-    subtitle: "Lead Systems Engineer — SRE, Platform Ops & Observability, Incident Management, Change Management, Problem Management!"
+    subtitle: "Lead Systems Engineer — SRE, Platform Ops & Observability, Incident/Change/Problem Management!"
     content: >-
       20+ years keeping high-availability, global-scale systems running. Most recently was leading reliability 
       engineering for airline reservation infrastructure at Amadeus IT Group. I helped build alerting-as-code 
