@@ -75,7 +75,7 @@ params:
       Remember this:  It's not only about fixing the problem, it's about preventing it from happening again.  
     image: "/images/Adam-HeroPic.jpg"
     bottomImage:
-      enable: true
+      enable: false
     buttons:
       - enable: true
         name: "Lead/Senior SRE Resume"
