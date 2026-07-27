@@ -325,21 +325,37 @@ params:
           - icon: fab fa-github
             url: "https://madxxi.github.io/prometheus-alerting-patterns/"
 
+
       - title: "Grafana Dashboard Gallery (WIP)"
-        content: "Sanitized Grafana dashboard exports (JSON) demonstrating layout, 
+        content: "Coming soon:  Sanitized Grafana dashboard exports (JSON) demonstrating layout, 
                   variable templating, and alerting integration for on-call visibility"
         image: "/images/projects/grafana-logo.png"
         featuredLinks:
-          - name: "View Repo (WIP!)"
-            link: "https://github.com/madxxi/grafana-dashboard-gallery"
+#          - name: "View Repo (WIP!)"
+#            link: "https://github.com/madxxi/grafana-dashboard-gallery"
           - name: "Amadeus IT Group Observability Case"
             link: "https://www.redhat.com/en/blog/amadeus-it-group-observability-openshift"
         badges:
           - "Grafana"
           - "Observability"
+#        links:
+#          - icon: fab fa-github
+#            url: "https://github.com/madxxi/grafana-dashboard"
+
+      - title: "Perses (Related Project)"
+        content: "Perses is an open-source, Kubernetes-native dashboarding project I follow as 
+                 an emerging alternative to Grafana — included here for reference, not an original work of mine."
+        image: "/images/projects/Perses.png"
+        badges:
+          - "Related Projects"
+          - "Observability"
+        featured:
+          name: "Check out Perses"
+          link:  "https://perses.dev/"        
         links:
           - icon: fab fa-github
-            url: "https://github.com/madxxi/grafana-dashboard-gallery"
+            url: "https://github.com/perses/perses"
+
 
       - title: "Incident Response Runbook Template"
         content: "A generalized incident-response runbook and postmortem template reflecting 
