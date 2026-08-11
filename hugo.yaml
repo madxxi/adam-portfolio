@@ -326,7 +326,7 @@ params:
             url: "https://madxxi.github.io/prometheus-alerting-patterns/"
 
 
-      - title: "Grafana Dashboard Gallery (WIP)"
+      - title: "Grafana Dashboard Gallery (Demo)"
         content: "Sanitized Grafana dashboard exports (JSON) demonstrating layout, 
                   variable templating, and alerting integration for on-call visibility"
         image: "/images/projects/grafana-logo.png"
