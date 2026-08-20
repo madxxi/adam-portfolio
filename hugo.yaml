@@ -72,7 +72,7 @@ params:
       engineering for airline reservation infrastructure at Amadeus IT Group. I helped build alerting-as-code 
       based on Templates with Prometheus/PromQL, assisted with design of Grafana dashboards that teams actually use, 
       and treat incident response like a discipline, not a fire drill.  
-      Remember this:  It's not only about fixing the problem, it's about preventing it from happening again.  
+      Remember: It’s not only about fixing the problem, it’s about preventing it from happening again.  
     image: "/images/Adam-HeroPic.jpg"
     bottomImage:
       enable: false
@@ -130,9 +130,10 @@ params:
       I am also available for Incident/Change/Problem Management as well as SRE Management roles, 
       primarily remote, but open to hybrid (40/60) based in South Florida in Broward County or Northern Miami Dade.
 
-      Remember, it's not only what I can personally bring into the table, which is enormously important! 
-      I also know a strong network of SREs, platform engineers, cloud architects, and other experts that can 
-      solidify and help build a stronger team.
+      Also, it's not only what I bring along with my experience and skills! I have a very strong
+      network of SREs, platform engineers, cloud architects, and other experts who I can reach out to 
+      for advice, guidance, and collaboration!  A goldmine of knowledge and experience that I can tap 
+      into to help solve problems, improve processes, and drive innovation.
 
     skills:
       enable: true
@@ -299,7 +300,8 @@ params:
         content: "Certified ITIL & SaFE practitioner, with experience leading 
                  ITIL-based incident, change, and problem management for high-availability systems."
       - title: "U.S. Military Veteran"
-        content: "Service background informing a disciplined, process-oriented approach to operations and incident response."
+        content: "Service background informing a disciplined, process-oriented approach 
+                 to analysis, operations, project and/or resolution response."
 
   # ---- PROJECTS / TECHNICAL ARTIFACTS ----
   # This is the section that differentiates you from a resume PDF.
