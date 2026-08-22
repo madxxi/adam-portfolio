@@ -395,16 +395,19 @@ params:
   # ---- CONTACT ----
   contact:
     enable: true
+    title: "Get In Touch"
     content: "Open to SRE Management, Incident/Change/Problem Management, Lead/Senior SRE, Platform Engineering, and Cloud Infrastructure roles — remote or hybrid (40/50; 50/50) South Florida based. Reach out directly."
-    btnName: "Email Me"
-    btnLink: "mailto:mr.mynor.diaz@gmail.com"
+    emails:
+      - label: "Contact me!"
+        address: "mr.mynor.diaz@gmail.com"
 
   footer:
     recentPosts:
       enable: false
     socialNetworks:
       github: https://github.com/madxxi/
-      linkedin: https://www.linkedin.com/in/mynor-diaz
+      linkedinProfiles: 
+        - https://www.linkedin.com/in/mynor-diaz
 
   singlePages:
     socialShare: false
