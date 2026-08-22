@@ -377,7 +377,7 @@ params:
       - title: "Personal (blueprint): Market Agent Scanner"
         content: "A simple yet useful stock market agent scanner for 503 S&P 500 and 400 S&P 400 tickers!
                  Uses pushover.net for notifications and a simple web interface to view the results.  
-                 This is a personal project that I use to scan the marekt at specific times and provide me 
+                 This is a personal project that I use to scan the market at specific times and provide me 
                  hints on what to buy or sell.  It is a blueprint for a more complete market scanner that 
                  I plan to further develop in the future."
         image: "/images/projects/stock-market.jpg"
