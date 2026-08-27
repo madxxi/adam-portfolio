@@ -327,11 +327,12 @@ params:
           - icon: fab fa-github
             url: "https://madxxi.github.io/prometheus-alerting-patterns/"
 
-
       - title: "Grafana Dashboard Gallery (Demo)"
         content: "Sanitized Grafana dashboard exports (JSON) demonstrating layout, 
                   variable templating, and alerting integration for on-call visibility. Three principal prometheus scrape pools: 
-                  airline-ai, node-exporter, and prometheus.  Collection of metrics, and Grafana dashboards"
+                  airline-ai, node-exporter, and prometheus.  Project that initially was working as a local Grafana instance on a WSL 
+                  machine, which was then exported and deployed into a free public Grafana instance using OCI (two ubuntu instances) 
+                  using duckdns to redirect the Grafana pages."
         image: "/images/projects/grafana-logo.png"
         featuredLinks:
           - name: "Grafana Dashboard Demo"
