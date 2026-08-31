@@ -393,6 +393,29 @@ params:
 #          - icon: fab fa-github
 #            url: "https://madxxi.github.io/incident-runbook-templates/"
 
+      - title: "Personal Privacy Checker"
+        content: "What I consider another interesting personal project, it checks how exposed is your privacy! 
+                 In the US we have a big problem (which is not a rampant issue in Europe thanks to GDPR), that our personal 
+                 information is sold everywhere!  Most of us are unaware, and this information ends up exposed in an number of 
+                 unimaginable places!  Since the government has not provided us any built-in protections, we are only left with 
+                 the option to protect ourselves.  The law (federal and state) may be able to assist, but only in a reactive way, 
+                 and only after we discover how exposed our private information is, we must take initial steps to address it.  
+                 This is a dear and personal project, since my personal information was compromised a while ago, seeking to protect
+                 that privacy as best as I can.  This is but a template, you must configure it with your personal information!"
+        image: "/images/projects/identity-theft.jpeg"
+        featured:
+          name: "View Repo"
+          link: "https://github.com/madxxi/privacy-guardian-template"
+        badges:
+          - "Privacy Guardian"
+          - "Information Security"
+          - "Your Personal Information Rights"
+          - "Identity Theft Prevention"
+#        links:
+#          - icon: fab fa-github
+#            url: "https://madxxi.github.io/incident-runbook-templates/"
+
+
   # ---- CONTACT ----
   contact:
     enable: true
