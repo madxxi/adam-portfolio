@@ -309,9 +309,11 @@ params:
   # your sanitized PromQL library, Grafana dashboards, and runbook.
   projects:
     enable: true
-    title: "Technical Artifacts"
+    workTitle: "Work Projects"
+    personalTitle: "Personal Projects"
     items:
       - title: "PromQL Alerting Pattern Library"
+        category: "work"
         content: "A sanitized collection of Prometheus alerting rules and PromQL query 
                   patterns for common SRE scenarios: latency, errors, saturation, pod states,
                   infrastructure health, availabilty, etc."
@@ -328,6 +330,7 @@ params:
             url: "https://madxxi.github.io/prometheus-alerting-patterns/"
 
       - title: "Grafana Dashboard Gallery (Demo)"
+        category: "work"
         content: "Sanitized Grafana dashboard exports (JSON) demonstrating layout, 
                   variable templating, and alerting integration for on-call visibility. Three principal prometheus scrape pools: 
                   airline-ai, node-exporter, and prometheus.  Project that initially was working as a local Grafana instance on a WSL 
@@ -347,6 +350,7 @@ params:
 #            url: "https://github.com/madxxi/grafana-dashboard"
 
       - title: "Perses (Related Project)"
+        category: "work"
         content: "Perses is an open-source, Kubernetes-native dashboarding project I follow as 
                  an emerging alternative to Grafana — included here for reference, not an original work of mine."
         image: "/images/projects/Perses.png"
@@ -361,6 +365,7 @@ params:
             url: "https://github.com/perses/perses"
 
       - title: "Incident Response Runbook Template"
+        category: "work"
         content: "A generalized incident-response runbook and postmortem template reflecting 
                  ServiceNow-based routing and escalation practices for high-availability environments."
         image: "/images/projects/incident-management-workflow.png"
@@ -376,6 +381,7 @@ params:
             url: "https://madxxi.github.io/incident-runbook-templates/"
 
       - title: "Personal (blueprint): Market Agent Scanner"
+        category: "personal"
         content: "A simple yet useful stock market agent scanner for 503 S&P 500 and 400 S&P 400 tickers!
                  Uses pushover.net for notifications and a simple web interface to view the results.  
                  This is a personal project that I use to scan the market at specific times and provide me 
@@ -394,6 +400,7 @@ params:
 #            url: "https://madxxi.github.io/incident-runbook-templates/"
 
       - title: "Personal Privacy Checker"
+        category: "personal"
         content: "What I consider another interesting personal project, it checks how exposed is your privacy! 
                  In the US we have a big problem (which is not a rampant issue in Europe thanks to GDPR), that our personal 
                  information is sold everywhere!  Most of us are unaware, and this information ends up exposed in an number of 
