@@ -342,6 +342,8 @@ params:
             link: "https://adamdemo.duckdns.org/d/host-self-monitoring/host-metrics-self-monitoring?orgId=1&refresh=30s&from=now-1h&to=now"
           - name: "Amadeus IT Group Observability Case"
             link: "https://www.redhat.com/en/blog/amadeus-it-group-observability-openshift"
+          - name: "Kubernetes: Amadeus Case Study"
+            link: "https://kubernetes.io/case-studies/amadeus/"
         badges:
           - "Grafana"
           - "Observability"
@@ -427,7 +429,8 @@ params:
   contact:
     enable: true
     title: "Get In Touch"
-    content: "Open to SRE Management, Incident/Change/Problem Management, Lead/Senior SRE, Platform Engineering, and Cloud Infrastructure roles — remote or hybrid (40/50; 50/50) South Florida based. Reach out directly."
+    content: "Open to SRE Management, Incident/Change/Problem Management, Lead/Senior SRE, Platform Engineering, 
+             and Cloud Infrastructure roles — remote or hybrid (20/80; 40/60) South Florida based. Reach out directly."
     emails:
       - label: "Contact me!"
         address: "mr.mynor.diaz@gmail.com"
