@@ -442,7 +442,7 @@ params:
         image: "/images/projects/happy-retirement.jpg"
         featured:
           name: "View Retirement Analyzer"
-          link: "https://madxxi.github.io/retirement-analyzer/index.html"
+          link: "https://madxxi.github.io/retirement-analyzer/"
         badges:
           - "Retiree options"
           - "Best Options for Retirees"
