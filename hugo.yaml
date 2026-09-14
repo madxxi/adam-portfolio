@@ -451,6 +451,30 @@ params:
           - icon: fab fa-github
             url: "https://github.com/madxxi/retirement-analyzer/"
 
+      - title: "US Retiree Expat Selector:  Living Abroad!"
+        category: "personal"
+        content: "This is another personal project that some will find useful to replicate.
+                 It is another version of the US Retiree Selector, but this one is focused on evaluating options 
+                 for US retirees who are considering living abroad.  The key factors considered are cost of living, 
+                 healthcare quality, taxation burden, Visa Ease, Cost of Living, and property rights.  
+                 This is a personal project that I developed to easily evaluate my own options, and I am
+                 sharing it here as a blueprint for others to address and perhaps even expand their personal needs.  
+                 You can add all sources of income, the tool will give you a weighed in set of options for you to 
+                 qualify them.
+                 P.S.  It can use a variety of AI API Keys. Download locally the index.html and configure 
+                 your own API key in the index.html file!"
+        image: "/images/projects/happy-retirement.jpg"
+        featured:
+          name: "View Expat Analyzer"
+          link: "https://madxxi.github.io/expat-analyzer/"
+        badges:
+          - "Retiree options"
+          - "US Expat options"
+          - "Living Abroad!"
+        links:
+          - icon: fab fa-github
+            url: "https://github.com/madxxi/expat-analyzer/"
+
   # ---- CONTACT ----
   contact:
     enable: true
