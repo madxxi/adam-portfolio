@@ -13,7 +13,7 @@
 
         {{ if or (gt (len $workItems) 0) (gt (len $workPages) 0) }}
         <h3 class="text-center">{{ $projects.workTitle | default .Site.Params.projects.workTitle | default "Work Projects" }}</h3>
-        <div class="row justify-content-center px-3 px-md-5 mb-5">
+        <div class="row justify-content-center px-3 px-md-5 mb-4">
             {{ range $workItems }}
             {{ partial "sections/project-card.html" . }}
             {{ end }}
