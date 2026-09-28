@@ -1,0 +1,38 @@
+/* Sitewide card language — applies the same soft-shadow, rounded-corner,
+   hover-lift treatment already used in About/Projects to every other
+   .card on the site (Certifications, Achievements, Education), so all
+   card-based sections look like one consistent design system rather
+   than each section carrying its own default Bootstrap look.
+
+   Scoped sections with their own more specific .card rules (#projects,
+   #about) already win over this by CSS specificity, so this is safe to
+   apply broadly without fighting those. */
+.card {
+    border: 1px solid var(--secondary-background-color) !important;
+    border-radius: 1rem !important;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, .04), 0 8px 24px rgba(15, 23, 42, .06);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(15, 23, 42, .12);
+}
+
+/* Buttons — round pill shape and a small lift on hover, matching the
+   card treatment, instead of Bootstrap's default sharp-ish corners. */
+.btn {
+    border-radius: 999px !important;
+    transition: transform .12s ease, box-shadow .15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Skill/tag pills already use a pill shape (see about.css); give
+   certification/achievement badges and section "eyebrow" text the same
+   accent-tinted treatment for visual consistency across sections. */
+.badge-secondary {
+    border-radius: 999px !important;
+}

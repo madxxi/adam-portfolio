@@ -1,0 +1,96 @@
+{{/*
+    Site override of the theme's experience.html.
+
+    The theme's default renders each company as a Bootstrap pill tab —
+    clicking "Amadeus" hides every other company. For someone with a
+    single long tenure (multiple roles at one company) that's fine, but
+    it also means a recruiter skimming the page never sees more than one
+    company at a time without clicking, and the whole history isn't
+    visible in a screenshot, a PDF-print of the page, or a quick scroll.
+
+    This replaces the tabs with an always-visible vertical timeline —
+    one dot per role, grouped under its company — so the full career
+    history reads top-to-bottom the way a resume does. All existing data
+    bindings (company/companyUrl, per-job name/date/content, the info
+    tooltip, and featuredItems icons) are preserved exactly; only the
+    presentation changes.
+*/}}
+{{ if .Site.Params.experience.enable | default false }}
+{{- $experience := .Site.Language.Params.experience | default .Site.Params.experience -}}
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ $experience.title | default .Site.Params.experience.title | default (i18n "experience") }}</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-8 py-5">
+                <div class="timeline primary-font">
+                    {{ range $experience.items | default .Site.Params.experience.items }}
+                        {{ $company := .company }}
+                        {{ $companyUrl := .companyUrl }}
+                        {{ range $jobIdx, $job := .jobs }}
+                        <div class="tl-item{{ if eq $jobIdx 0 }} tl-current{{ end }}">
+                            <div class="tl-dot"></div>
+                            <div class="tl-date">{{ $job.date }}</div>
+                            <div class="d-flex align-items-center flex-wrap tl-role-row">
+                                <span class="tl-role">{{ $job.name }}</span>
+                                {{ if $job.info.content }}
+                                <span class="ps-2">
+                                    <span
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        data-bs-original-title={{ $job.info.content }}
+                                    >
+                                        <i class="fas fa-info-circle fa-xs"></i>
+                                    </span>
+                                </span>
+                                {{ end }}
+                                {{ if $job.featuredItems }}
+                                <div class="featuredLink list-inline d-flex align-items-center ms-2">
+                                    {{ range $job.featuredItems.fontAwesomeIcons }}
+                                    <div class="list-inline-item">
+                                        <a
+                                            href="{{ .url }}"
+                                            target="_blank"
+                                            {{ if .tooltip }}
+                                                data-bs-toggle="tooltip"
+                                                data-bs-placement="top"
+                                                data-bs-original-title={{ .tooltip }}
+                                            {{ end }}
+                                        >
+                                            <i class="{{ .icon }}"></i>
+                                        </a>
+                                    </div>
+                                    {{ end }}
+                                    {{ range $job.featuredItems.customIcons }}
+                                    <div class="list-inline-item">
+                                        <a
+                                            class="d-flex align-items-center"
+                                            href="{{ .url }}"
+                                            target="_blank"
+                                            {{ if .tooltip }}
+                                                data-bs-toggle="tooltip"
+                                                data-bs-placement="top"
+                                                data-bs-original-title={{ .tooltip }}
+                                            {{ end }}
+                                        >
+                                            <img src="{{ .icon }}">
+                                        </a>
+                                    </div>
+                                    {{ end }}
+                                </div>
+                                {{ end }}
+                            </div>
+                            <div class="tl-org">
+                                {{ if $companyUrl }}<a href="{{ $companyUrl }}" target="_blank">{{ $company }}</a>{{ else }}{{ $company }}{{ end }}
+                            </div>
+                            <div class="tl-content">
+                                {{ $job.content | markdownify }}
+                            </div>
+                        </div>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

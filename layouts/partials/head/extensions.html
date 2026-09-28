@@ -1,6 +1,9 @@
 {{/*
     Custom theme overrides that need to appear in <head>.
 */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
     #hero h1 {
         font-size: clamp(28px, 5vw, 48px) !important;
@@ -24,11 +27,6 @@
         min-height: auto !important;
         padding-top: 3rem;
         padding-bottom: 3rem;
-    }
-
-    #about ul li::before,
-    #experience .experience-container .tab-content .tab-pane ul li::before {
-        content: "\2022" !important; /* standard bullet, broad font support */
     }
 
     /* Vertical spacing between sections. Previously only 4 of the 7

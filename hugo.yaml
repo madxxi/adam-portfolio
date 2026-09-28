@@ -35,6 +35,29 @@ params:
   mathjax: false
   animate: true
 
+  # Color system — slate neutrals + a teal accent (distinct from the
+  # orange/red palette already used by the Grafana and Prometheus logos
+  # in the Projects section, so the site's own accent doesn't clash or
+  # blend with those). Same slate-900/teal pairing idea as reference
+  # sites in this space, translated into this theme's own color params.
+  color:
+    textColor: "#0f172a"              # slate-900 — body/heading text
+    secondaryTextColor: "#64748b"     # slate-500 — muted/secondary text
+    textLinkColor: "#0d9488"          # teal-600 — links
+    backgroundColor: "#f6f8f9"        # near-white, faint cool tint
+    secondaryBackgroundColor: "#0d948814"  # teal @ ~8% opacity (hover tints, underlines)
+    primaryColor: "#0d9488"           # teal-600 — buttons, active states, accents
+    secondaryColor: "#ffffff"         # card/surface background
+
+    darkmode:
+      textColor: "#e2e8f0"            # slate-200
+      secondaryTextColor: "#94a3b8"   # slate-400
+      textLinkColor: "#2dd4bf"        # teal-400 — brighter for dark-bg contrast
+      backgroundColor: "#0f172a"      # slate-900 page background
+      secondaryBackgroundColor: "#2dd4bf14"  # teal @ ~8% opacity
+      primaryColor: "#2dd4bf"         # teal-400
+      secondaryColor: "#1e293b"       # slate-800 — card/surface background
+
   theme:
     disableThemeToggle: false
     defaultTheme: "light"

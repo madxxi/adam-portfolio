@@ -1,0 +1,34 @@
+/* Site override of the theme's font.css (same path, so Hugo's static-dir
+   precedence serves this version instead of the theme's default).
+   Swaps the theme's serif body font (Lora) for a clean sans-serif pairing —
+   Inter for body copy, Space Grotesk for headings — closer to a modern,
+   easy-to-scan resume/portfolio look. Both families are loaded via the
+   Google Fonts <link> added in layouts/partials/head/extensions.html. */
+
+body {
+    font-family: "Inter", system-ui, -apple-system, sans-serif !important;
+}
+
+/* secondary font: used for card text, descriptions, subtitles */
+.secondary-font, #secondary-font {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* primary font: nav brand, section tab labels, hero role line, etc. */
+.primary-font, #primary-font {
+    font-family: "Space Grotesk", "Inter", sans-serif;
+}
+
+/* Default font (rarely used directly, keep consistent rather than a
+   third family showing up unexpectedly) */
+.default-font, #default-font {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* All headings get the display font, the same way Kurt's site applies
+   one heading font across h1/h2/h3 regardless of which section they're
+   in, rather than relying on each template to opt in with a class. */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Space Grotesk", "Inter", sans-serif;
+    letter-spacing: -0.01em;
+}
