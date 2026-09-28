@@ -68,11 +68,12 @@ params:
     title: "Mynor A. Diaz"
     subtitle: "Lead Systems Engineer — SRE, Platform Ops & Observability, Incident/Change/Problem Management!"
     content: >-
-      20+ years keeping high-availability, global-scale systems running. Most recently was leading reliability 
-      engineering for airline reservation infrastructure at Amadeus IT Group. I helped build alerting-as-code 
-      based on Templates with Prometheus/PromQL, assisted with design of Grafana dashboards that teams actually use, 
-      and treat incident response like a discipline, not a fire drill.  
-      Remember: It’s not only about fixing the problem, it’s about preventing it from happening again.  
+      Senior Site Reliability Engineer with 20+ years at Amadeus IT Group, one of the world's largest travel solutions 
+      providers, owning reliability for 460+ mission-critical applications. Sustained a 196–200/200 Service Stability 
+      Index for 12 consecutive years with sub-20-minute MTTR on critical outages, and served as Incident Commander for 
+      ~36 Sev-1/Sev-2 incidents per year. Led an alerts-as-code initiative (100+ Prometheus/Thanos rules, Go tooling, Grafana) 
+      that cut alert noise 50%, and the zero-downtime migration of 400+ applications to Red Hat OpenShift and Microsoft Azure. 
+      Extending into AWS and Terraform through hands-on portfolio work.  
     image: "/images/Adam-HeroPic.jpg"
     bottomImage:
       enable: false
@@ -176,41 +177,46 @@ params:
               Leading reliability engineering and platform operations for high-availability,
               global-scale airline reservation systems.
 
-              - Owned reliability and operations for 460+ mission-critical production applications (reservations, 
-              ticketing, inventory) serving global travel customers, consistently achieving 98–99% availability and strict SLOs in a 24/7
-              high-traffic SaaS environment.
-              - Spearheaded a major JIRA Epic to standardize, consolidate, and automate alerts using Prometheus, Thanos,
-              PromQL, Go, and ServiceNow — significantly reduced alert noise, enabled on-the-fly Grafana dashboards, and
-              improved operational efficiency across the organization.
-              - Led large-scale cloud migrations from legacy physical/virtual Linux systems to private OpenShift (v3/v4) and
-              public Azure, delivering zero business disruption while modernizing infrastructure and reducing operational
-              overhead.
-              - Drove end-to-end incident, problem, and change management using ITIL best practices; championed blameless
-              postmortems and continuous improvements that enhanced system stability and recovery speed.
-              - Helped developed automation scripts and tooling (Go, Shell, GitHub Actions) to reduce manual toil, accelerate
-              deployments, and improve monitoring and recovery processes.
-              - Trained and onboarded 25+ engineers on cloud services, incidents, and recovery best practices within a SAFe
-              Agile framework.
-              - Via team efforts, streamlined incident routing and response through ServiceNow, improving by at least 10% 
-              the mean time to acknowledge (MTTA) and mean time to resolve (MTTR) for critical incidents, and with it also facilitating automation.
+              - Maintained a 196–200/200 Service Stability Index (SSI), Amadeus's internal reliability scorecard tied to 
+              MTTR, for 12 consecutive years (2013–2025), resolving 95%+ of incidents within target: sub-20-minute MTTR 
+              on critical outages and sub-30-minute on degradations.
+              - Implemented SLI/SLO frameworks and multi-window error-budget burn-rate alerting across 460+ mission-critical 
+              travel applications, cutting false-positive pages by 50% and focusing engineering effort on the highest-risk 
+              reliability work.
+              - Built a library that resulted on 100+ templated Prometheus/Thanos (PromQL) alert rules with Go-based tooling 
+              that auto-generated Grafana dashboards and routed incidents to ServiceNow; automated rule rollout with GitHub 
+              Actions and Bash, reducing on-call pages by ~250/week, deployment time from 120 to 15 minutes, and manual 
+              toil by ~10 hours/week.
+              - Led multi-phase migration of 400+ applications and 2,600 Linux hosts from physical to virtual infrastructure, 
+              then to private Red Hat OpenShift (v3/v4) and public Microsoft Azure, decomposing the portfolio into 460+ 
+              microservices-based applications with zero customer-facing downtime and eventually reduc provisioning time 
+              from 6 weeks to 48 hours. 
+              - Reduced average troubleshooting time on complex incidents by 15% by introducing AIOps practices, including 
+              AI-assisted diagnosis (GitHub Copilot, Claude, GPT-4) and RAG-based retrieval over Confluence runbooks and 
+              operational procedures; cut runbook creation for new ServiceNow alert types from 2 hours to 15 minutes.
+              - Trained and onboarded 25+ engineers as official instructor for the Amadeus Cloud Services (ACS) curriculum 
+              (ACS Induction; ACS Incidents and Recovery), shortening new-hire time to operational readiness from 12 to 2 weeks.
 
           - name: "Sre SRE (Unix/Linux) / Lead Systems Engineer"
-            date: "Oct 2004 - Jun 2008 / Jul 2008 - Dec 2018"
+            date: "Apr 2005 - Jun 2008 / Jul 2008 - Dec 2018"
             info:
               content: "Sr. and then Lead Systems Engineer of teams responsible for all production Linux/Unix systems supporting airline reservation infrastructure"
             content: |
-              - Led a global 24/7 team of 9 SREs, driving mission-critical platform availability to an average of 99% for systems
-              supporting the global travel industry, while directing all incident, change, and problem management using ITIL best
-              practices.
-              - Owned operational stability and risk management for a multi-million Euro environment spanning over 5,500
-              production and test systems (HP-UX, Linux, multiple architectures), overseeing high-availability cluster operations
-              (Veritas, MC/ServiceGuard) and all major OS/database upgrades.
-              - Championed automation and reliability engineering, developing custom scripts and tools (Perl, PHP, HTML) to
-              enhance monitoring, accelerate fault recovery, and eliminate toil, directly supporting the team’s ability to meet stringent
-              availability targets.
-              - Managed cross-functional technical execution, including Oracle version migrations, IBM MQ incident resolution, and
-              oversight of administrative environments (Dev/Pre-Prod/Prod), ensuring coordinated, low-risk change implementation
-              across the entire technology stack.
+              - Served as technical lead for a global 24/7 team of 9 engineers without formal reporting authority, providing 
+              performance assessments that fed formal review cycles, and significantly influencing hiring decisions; mentored 
+              18 engineers into senior roles over 10 years and cut team turnover by 25%.
+              - Served as Incident Commander (2013–2018) for ~15 major production incidents per year, directing cross-team 
+              response and stakeholder communications through resolution; led ITIL incident, problem, and change management 
+              with root-cause and preventive actions across thousands of production systems, reducing repeat incidents by 
+              95% and change-related outages by 90%.
+              - Owned operational stability and risk management for a €2.7B revenue-supporting environment of 5,500+ production 
+              and test systems (HP-UX, Linux), overseeing high-availability clusters (Veritas, MC/ServiceGuard) and leading 250 
+              major OS and database upgrades while sustaining 99.99% uptime on clustered production services.
+              - Developed Perl and PHP monitoring and recovery tools that eliminated ~20 hours/week of manual checks; the 
+              tooling was showcased at sites in France and England and led to the formation of a dedicated alerting and monitoring
+               team in 2014.
+              - Supported 10 Oracle version migrations and IBM MQ incident resolution across Dev, Pre-Prod, and Prod environments, 
+              completing all within planned maintenance windows with zero data loss.
 
   # ---- EDUCATION ----
   education:
