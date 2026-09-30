@@ -162,27 +162,81 @@ params:
 
     skills:
       enable: true
-      title: "Core tools and technologies:"
-      items:
-        - "Leadership / Management / Mentoring"
-        - "Incident Commander"
-        - "Environment Migration Support Expert"
-        - "Training / Onboarding"
-        - "Grafana / Prometheus / PromQL / Thanos / Alert Management"     
-        - "Observability / Monitoring / Alerting"
-        - "Bitbucket / GitHub"
-        - "AI Augmented Engineering (LLMs, ChatGPT, Copilot, Claude, etc.)"
-        - "ServiceNow"
-        - "Kubernetes"
-        - "Linux / Unix / Shell Scripting"
-        - "CI/CD / GitHub Actions / Jenkins / ArgoCD / GitOps"
-        - "Automation / Scripting (Go, Shell, Awk, sed, Python)"
-        - "Cloud (Azure, OpenShift)"
-        - "Incident Management / Postmortems"
-        - "Change Management / Release Management"
-        - "Problem Management / Root Cause Analysis"
-        - "Jira / Confluence / Agile / SAFe / Scrum"
-        - "Terraform"
+      title: "My Technologies Toolkit"
+      subtitle: "Some of my reliability & leadership in practice toolkit. A few tags link straight to a project 
+                 or reference that shows the skill in use."
+      # Each category is a card; each item is a small pill tag. Add a `url`
+      # to any item to make its tag clickable (a project repo, a live demo,
+      # a reference link) — omit `url` for a plain, non-linked tag.
+      categories:
+        - name: "Leadership & Incident Management"
+          icon: "fas fa-users-gear"
+          items:
+            - name: "Leadership & Management"
+            - name: "Mentoring"
+            - name: "Incident Commander"
+            - name: "Training / Onboarding"
+            - name: "Change Management"
+            - name: "Release Management"
+            - name: "Problem Management"
+            - name: "Root Cause Analysis"
+
+        - name: "Observability & Monitoring"
+          icon: "fas fa-chart-line"
+          items:
+            - name: "Grafana"
+              url: "https://adamdemo.duckdns.org/d/host-self-monitoring/host-metrics-self-monitoring?orgId=1&refresh=30s&from=now-1h&to=now"
+            - name: "Prometheus"
+              url: "https://github.com/madxxi/prometheus-alerting-patterns"
+            - name: "PromQL"
+              url: "https://github.com/madxxi/prometheus-alerting-patterns"
+            - name: "Thanos"
+            - name: "Alert Management"
+            - name: "Observability"
+            - name: "Monitoring"
+
+        - name: "Platform & Cloud"
+          icon: "fas fa-cloud"
+          items:
+            - name: "Kubernetes"
+              url: "https://kubernetes.io/case-studies/amadeus/"
+            - name: "Azure"
+            - name: "OpenShift"
+              url: "https://www.redhat.com/en/blog/amadeus-it-group-observability-openshift"
+            - name: "Terraform"
+            - name: "Environment Migration"
+
+        - name: "Automation & CI/CD"
+          icon: "fas fa-code-branch"
+          items:
+            - name: "GitHub Actions"
+            - name: "Jenkins"
+            - name: "ArgoCD"
+            - name: "GitOps"
+            - name: "Python"
+            - name: "Go"
+            - name: "Shell Scripting"
+            - name: "Awk / sed"
+            - name: "Linux / Unix"
+
+        - name: "AI-Augmented Engineering"
+          icon: "fas fa-robot"
+          items:
+            - name: "LLMs"
+            - name: "ChatGPT"
+            - name: "GitHub Copilot"
+            - name: "Claude"
+
+        - name: "Process & Collaboration"
+          icon: "fas fa-people-arrows"
+          items:
+            - name: "ServiceNow"
+              url: "https://github.com/madxxi/incident-runbook-templates"
+            - name: "Jira"
+            - name: "Confluence"
+            - name: "Agile / Scrum"
+            - name: "SAFe"
+            - name: "Bitbucket / GitHub"
 
   # ---- EXPERIENCE ----
   # Add earlier roles below the Amadeus entry as additional "company" blocks.

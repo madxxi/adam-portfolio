@@ -15,12 +15,30 @@
                 {{ $about.content | markdownify }}
 
                 {{ if .Site.Params.about.skills.enable }}
-                {{ $about.skills.title | default .Site.Params.about.skills.title }}
-                <ul class="skills-list">
-                    {{ range .Site.Params.about.skills.items }}
-                    <li>{{ . | markdownify }}</li>
-                    {{ end }}
-                </ul>
+                {{ $skills := .Site.Language.Params.about.skills | default .Site.Params.about.skills }}
+                <div class="skills-toolkit">
+                    {{ with $skills.title }}<h4 class="skills-toolkit-title">{{ . }}</h4>{{ end }}
+                    {{ with $skills.subtitle }}<p class="skills-toolkit-subtitle">{{ . }}</p>{{ end }}
+                    <div class="skills-grid">
+                        {{ range $skills.categories }}
+                        <div class="skill-cat">
+                            <h5>
+                                {{ with .icon }}<span class="skill-cat-ico"><i class="{{ . }}"></i></span>{{ end }}
+                                <span>{{ .name }}</span>
+                            </h5>
+                            <div class="tag-list">
+                                {{ range .items }}
+                                {{ if .url }}
+                                <a class="tag" href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+                                {{ else }}
+                                <span class="tag">{{ .name }}</span>
+                                {{ end }}
+                                {{ end }}
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
                 {{ end }}
             </div>
         </div>
