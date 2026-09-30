@@ -125,8 +125,6 @@ params:
           url: https://github.com/madxxi
         - icon: fa fa-envelope
           url: mailto:mr.mynor.diaz@gmail.com
-        - icon: fas fa-thumbs-up
-          url: "/documents/Adam-RecommendationsReceived_JUL2026.pdf"
 
   # ---- ABOUT ----
   about:
@@ -163,8 +161,7 @@ params:
     skills:
       enable: true
       title: "My Technologies Toolkit"
-      subtitle: "Some of my reliability & leadership in practice toolkit. A few tags link straight to a project 
-                 or reference that shows the skill in use."
+      subtitle: "Grouped the way I break them out on my resume — reliability & leadership practice, then the platforms and tools underneath it. A few tags link straight to a project or reference that shows the skill in use."
       # Each category is a card; each item is a small pill tag. Add a `url`
       # to any item to make its tag clickable (a project repo, a live demo,
       # a reference link) — omit `url` for a plain, non-linked tag.
@@ -562,6 +559,299 @@ params:
         links:
           - icon: fab fa-github
             url: "https://github.com/madxxi/expat-analyzer/"
+
+  # ---- RECOMMENDATIONS ----
+  # Pulled from LinkedIn's Recommendations Received export (PDF), lightly
+  # cleaned up for obvious typos only — wording and substance are theirs,
+  # not rewritten. Anonymous "LinkedIn User" entries stay unnamed since
+  # LinkedIn itself doesn't expose who they are. `role` is inferred from
+  # context in the quote itself where LinkedIn didn't give a title.
+  recommendations:
+    enable: true
+    title: "Recommendations"
+    subtitle: "Observations from my colleagues"
+    # How many cards show before "Show all" is clicked. Keep it in the
+    # 6-9 range so the section reads as a preview, not a wall — tune it
+    # here any time without touching the template or CSS.
+    visibleCount: 6
+    items:
+      - name: "Polo-François Poli"
+        role: "Colleague, Amadeus (2008–2012)"
+        content: >-
+          I worked with Mynor from 2008 to 2012 during his time leading US operations for Amadeus.
+          In an environment that serves as the heart of the global reservation system — powering the
+          majority of the world's airlines and airports — Mynor was responsible for incident
+          management, service reliability, and deployment. What truly set Mynor apart was the
+          operational excellence he instilled in his team and his customer-obsessed approach to
+          service stability. When disruptions occurred that could impact travel infrastructure
+          globally, Mynor remained calm and professional, leading his team to act with total
+          precision. He didn't work in a vacuum; he was a bridge-builder who worked hand-in-hand with
+          product development teams to drive swift, effective resolutions. His leadership style was
+          defined by a rare combination of technical rigor and a collaborative spirit. Mynor is an
+          extremely driven professional, and his ability to lead through mission-critical challenges
+          made him an invaluable partner to work with.
+
+      - name: "LinkedIn Colleague"
+        role: "Colleague, Amadeus"
+        content: >-
+          I worked with Mynor Diaz during his time as Lead Systems Engineer at Amadeus. He
+          consistently demonstrated strong technical knowledge, particularly in system stability and
+          high-availability environments. Mynor was proactive in addressing issues and led teams to
+          fast incident recoveries. He was also a supportive and approachable colleague, making
+          collaboration easy across teams — even across the globe.
+
+      - name: "Sébastien Evrard"
+        role: "Product Owner, Monitoring Solutions – Amadeus"
+        content: >-
+          I have cooperated with Mynor in the context of the Monitoring Solutions (I was at that time
+          the Product Owner of this) used by the entire Front Line Service teams. He contributed
+          significantly to the shaping of critical parts of the solution by providing clear
+          requirements and sharing a pragmatic vision of the day-to-day of our solution users. He
+          demonstrated an ability to go into the technical details of our platform and worked hand in
+          hand with our team to define an achievable and still efficient solution. Mynor is this kind
+          of team worker that you appreciate for his involvement, dedication and perseverance. He will
+          spend all the required efforts (and more) to get things understood, and if required he is
+          even able to stretch his role, as for instance when he managed required SAFe assets creation
+          and follow-up to make things happen (Epic Owner role). It is in Mynor's DNA to get knowledge,
+          process and tools ever improved to get faster, better and cleaner resolution of incidents.
+          Far more than a valuable technical and resolution expert, he is also able to step back to
+          look at the broader picture. I would really appreciate to get more chances to work with
+          Mynor.
+
+      - name: "LinkedIn Colleague"
+        role: "Colleague, Amadeus"
+        content: >-
+          I started at Amadeus under Adam's supervision and have worked under his leadership,
+          alongside him as a colleague, and on multiple separate teams collaborating with him. I can
+          say with all honesty that his character and drive are unique and unforgettable. Adam
+          consistently has demonstrated pinpoint attention to detail, and an unwavering focus on
+          ensuring matters are resolved. Whether project-based or problem-based, I've always trusted
+          Adam to either have or seek the expertise needed to overdeliver.
+
+      - name: "Nicholas Sellar"
+        role: "Colleague, ~10 years"
+        content: >-
+          For nearly 10 years I had the pleasure of working alongside Mynor. I found Mynor always
+          helpful and extremely knowledgeable in his area of expertise. Mynor is adaptable, detailed,
+          conscientious worker who would go above and beyond in any task/project he was faced with.
+
+      - name: "Javier Rodriguez"
+        role: "Colleague, 15+ years"
+        content: >-
+          I have been Adam's colleague for over fifteen years. Throughout our years as co-workers I've
+          known him to be a trustworthy, dependable, and level-headed guy. He's been able to adapt
+          with the times as the IT industry has evolved. Adam is not afraid to speak his mind, but
+          always keeps the discussion respectable. He is a driven overachiever and would be a benefit
+          to any team.
+
+      - name: "LinkedIn Colleague"
+        role: "Colleague, Amadeus"
+        content: >-
+          I met Mynor the first day I joined Amadeus (he was actually at my interview!). Even though I
+          have never worked in the same team with him, we have had the opportunity to interact
+          regularly in troubleshooting sessions or projects. He is one of the most valuable colleagues
+          I've ever had. He's not only a skilled technology expert, but a great leader! I have complete
+          admiration for his patience to teach (it just comes natural to him), and the discipline he
+          shows in every challenge he commits to overcome. Every time I've needed help with a problem,
+          he's always available, and with the best attitude to help! He is a problem solver, and a
+          great coordinator, with excellent communication skills. A few years ago, I had the
+          opportunity to work with him in the coordination and delivery of cloud technology trainings
+          for our colleagues. I was very impressed by his leadership, knowledge, and determination to
+          plan everything. I know the many days and nights he spent preparing for this, and the
+          results showed nothing but greatness. His trainings were a success, and this is just one
+          example of the quality of work he's accustomed to do. I am very thankful for colleagues like
+          Mynor, and cannot recommend him enough!
+
+      - name: "Johan Cabrera"
+        role: "Amadeus Global Operations"
+        content: >-
+          Adam Diaz is an knowledgeable engineer and an excellent team supervisor. In our more than
+          three years working together for the Amadeus Global Operations team he has proven himself to
+          be a capable leader and an example to follow by our engineers and managers. I've been
+          impressed with his organizational skills, his ability to lead the team through any
+          extraordinary situations as well as day-to-day operations and have the technical knowledge to
+          assist in any area. He excels in his understanding of the administrative requirements of the
+          department, while also doing more hands-on management and organization of the team's
+          activities and keeping up to date with the latest technological advancements in our business.
+          Adam is constantly seeking to improve our technical procedures and business process. Our team
+          is more technically proficient and efficient thanks to his hard work. Any team will be
+          extremely lucky to have him as a member and its leader.
+
+      - name: "Vladimir Vassiliouk"
+        role: "Engineer, Amadeus"
+        content: >-
+          During my 4 year tenure at Amadeus, it was a pleasure working with Mynor as the lead in our
+          team. Mynor was very technical and a great lead. Thanks to his mentorship and technical
+          advice I was able to deliver a lot of great projects for Amadeus and improve my skills as an
+          Engineer. Mynor played a big role in where my engineering career is today.
+
+      - name: "Christian Rojas, ITIL v.4"
+        role: "IT Operations Service Manager, Amadeus"
+        content: >-
+          While working as an IT Operations Service Manager for Amadeus' front line operational area, I
+          had the opportunity to work with Adam as my right hand and immediate eyes & ears to any
+          unforeseen degradation and/or outage in service. Adam's technical skills, knowledge of
+          Amadeus' processes and significant knowledge of the OBE world always brought me comfort and
+          ease throughout incidents as I then knew that I had someone with extensive experience and
+          skills to assist and/or lead recovery efforts in order to minimize impact to our customers.
+          Having worked with Adam for several years and throughout various roles, I can say that he'd
+          be a significant asset to any role, team, or corporation looking for the perfect combination
+          of technical and leadership skills.
+
+      - name: "Vladimir Vassiliouk"
+        role: "Engineer, Amadeus"
+        content: >-
+          Mynor was a fantastic lead during my time at Amadeus. He ran a tight ship and was a great
+          mentor to me in my career.
+
+      - name: "Renaud Jourdan"
+        role: "Colleague"
+        content: >-
+          Always a pleasure to work with you, your professionalism and your desire to clarify the
+          problems before taking any decision.
+
+      - name: "Clive Harracksingh"
+        role: "Contractor, Amadeus"
+        content: >-
+          During my contract at Amadeus, Mynor took the time to bring me up to speed with the business
+          side as well as operations during a time when the staffing was limited. His technical
+          knowledge, drive, experience and leadership skills played a key part in helping the Airline
+          IT technical environment at Amadeus grow. I strongly recommend him for any technical lead
+          especially a management role.
+
+      - name: "Gustavo Flores"
+        role: "Operations Team, Miami – Amadeus"
+        content: >-
+          I worked with Mynor in the operations team in Miami. Under his supervision we formalized and
+          streamlined our procedures. He made the team more efficient and was able to direct the
+          individual strengths into the common goal. Personally, he is very honorable and never takes
+          the easy path if it is not the best one. It was a pleasure working with him.
+
+      - name: "Mark Gruenberg"
+        role: "Amadeus Support"
+        content: >-
+          Adam was a good listener and a great problem solver. His leadership, problem solving, crisis
+          management, and listening abilities and his technical excellence have made his team the top
+          support team in Amadeus worldwide support ecosystem.
+
+      - name: "Nikolaus Samberger"
+        role: "Colleague, Amadeus"
+        content: >-
+          Mynor is a dedicated systems engineer. We have been collaborating for many years now (long
+          distance, continents apart) and Mynor has always been very helpful, thorough and organised.
+          Mynor has supported us on many occasions to come out of critical situations or to implement
+          new key functionalities. I have always appreciated working with him and his team.
+
+      - name: "Gérard Yin"
+        role: "Developer, Amadeus"
+        content: >-
+          Trust, expert knowledge, excellent service... I really liked to work with Mynor when I was a
+          developer. He understood the different constraints (operational, technical, business) and
+          always did his most to balance them efficiently. Despite miles of distance, he was always
+          available when we needed help. I'd really enjoy working with Mynor again in the future.
+
+      - name: "Jean-Noël Donadio"
+        role: "Amadeus, Nice (France)"
+        content: >-
+          I have had the chance to work with Mynor for a few years now. While my teams are based in
+          Nice (France), Mynor's team is based in Miami and is basically taking care of the follow-up
+          of the application my teams are in charge of (Mynor's organization is taking care of
+          application loads, system changes …). With people from our both organizations having
+          different cultures, different jobs, and being on different time zones, it was difficult to
+          anticipate how both organizations would work together, based on those different constraints.
+          Mynor has been able to build a very strong relationship between our two remote organizations.
+          People from my organization really appreciate the quality of the service and relation we have
+          with Mynor's organization. Mynor is a very strict, open-minded, professional and dedicated
+          person. He is clearly really involved in his work, always ready to ensure we progress in the
+          right direction. One key positive point according to me is that Mynor has ensured his teams
+          do not only understand the technical side of our programs, but also the functional and
+          strategic aspects of our business. This curiosity, and wish to master a part of the business
+          which was not mandatory for doing their standard activities, was certainly the key point for
+          ensuring such a successful organization, by ensuring people are involved in the evolution of
+          our business, and are not only "pressing buttons" without really understanding what is
+          happening behind. This resulted in higher quality of work and increased motivation of all
+          people working in our respective teams. Last, I had the pleasure to have Mynor joining my
+          department during a few weeks in Nice (the idea was for him to better understand the way we
+          work and see what could perhaps be enhanced in our current processes). On top of working with
+          a very professional person, my teams were pleased to have the opportunity to meet Mynor
+          during those few weeks, and to have with him a different relationship than the standard
+          "business" one. Everyone appreciated his positive spirit, good relationship, and his
+          integration was excellent. I am personally considering Mynor as a very valuable person.
+
+      - name: "Mary L. Williams-Carter"
+        role: "1SG, U.S. Army (Retired)"
+        content: >-
+          I highly recommend Mynor for the position he is applying for. Mynor is a very proactive and
+          responsible individual.
+
+      - name: "Joel Pfaff"
+        role: "Colleague, Systems Engineering"
+        content: >-
+          Mynor is a brilliant systems engineer. Not only is he very well organized and very
+          efficient, but he also is a pleasant coworker. Each time I worked with him, I have been
+          amazed by his motivation to always understand the technical details of the critical aspects
+          of our very complex production system.
+
+      - name: "Mary P."
+        role: "Colleague, Rollins"
+        content: >-
+          During the period I worked with Mynor at Rollins, he was an exemplary Unix administrator. He
+          had a thirst for knowledge and was driven to be the best version of himself. While working
+          with Mynor, he ensured our production environments were always running smoothly and all
+          maintenance took place on schedule. When a problem would arise, he resolved them quickly and
+          competently. He was the go-to man for all things administration. Besides being an excellent
+          admin, he was also a great team member. He shared his knowledge willingly and always took the
+          time to cross-train when somebody expressed an interest in expanding their skill set. Mynor
+          will excel in any position he pursues. He is a true professional and it is my pleasure to
+          write a recommendation for him.
+
+      - name: "Thomas Geist"
+        role: "Colleague"
+        content: >-
+          I know Mynor as a very enthusiastic professional. Both his technical and personal skills are
+          exemplary.
+
+      - name: "Pierre-Philippe di Costanzo"
+        role: "Systems Engineer, Amadeus"
+        content: >-
+          Mynor is a focused systems engineer; on many occasions we have had to collaborate on
+          production support and system evolution activities. Mynor is organised and very thorough,
+          which is essential in his field of activity. Despite the distance between our groups
+          (different continents, a few thousand km away) the relationship is excellent — we work as one
+          single team determined to deliver complex changes to the production systems. His professional
+          excellence is supplemented by no less excellent interpersonal relationship skills. I highly
+          recommend Mynor.
+
+      - name: "Lionel Martig"
+        role: "Colleague, Amadeus"
+        content: >-
+          Mynor is one of our key system engineers operating the complex distributed systems of
+          Amadeus. He is very reliable, conscientious, proactive and curious beyond his area of
+          responsibility. All this allows us on a daily basis to handle difficult situations and to
+          learn from them in order to monitor, anticipate and always improve!
+
+      - name: "Armando Benavides, A-CSM"
+        role: "Colleague, Rollins (2001–2003)"
+        content: >-
+          I worked with Mynor at Rollins from 2001 to 2003. As the UNIX Systems Administrator he was
+          responsible for supporting all the servers within the company's national call center. I was
+          always impressed with how he was able to keep the remote center going with minimal support
+          from IT (UNIX servers in an AS400 shop). Being self-directed, he was able to research and
+          resolve most issues on his own. He was also great at documenting his work.
+
+      - name: "Kris Carter"
+        role: "Colleague, Rollins"
+        content: >-
+          Mynor did a terrific job at Rollins. He was reliable, conscientious, and took a keen interest
+          in the business and our customers' needs. His technical skills are also top-notch.
+
+      - name: "Eric Owens"
+        role: "Unix Systems Administrator, Mirant Corporation"
+        content: >-
+          Mynor is a great and very knowledgeable guy. During our time together Mynor showed
+          extraordinary skills in system administration, database administration and general
+          troubleshooting. Mynor gets along well with others and works until the job is complete. There
+          seldom was a problem that couldn't be resolved quickly by Mynor Diaz.
 
   # ---- CONTACT ----
   contact:

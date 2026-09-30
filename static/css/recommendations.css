@@ -1,0 +1,150 @@
+/* Recommendations section — a testimonial wall of LinkedIn recommendations.
+   Cards use the same capped-height, internally-scrolling text box already
+   used for Project card descriptions (static/css/projects.css), so a
+   one-sentence quote and a ten-sentence quote occupy the same footprint
+   in the grid instead of some cards towering over their neighbors. */
+
+#recommendations .recommendations-subtitle {
+    color: var(--text-secondary-color);
+    max-width: 60ch;
+    margin: 0.35rem auto 2rem;
+}
+
+#recommendations .recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+@media (max-width: 991px) {
+    #recommendations .recommendations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    #recommendations .recommendations-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Collapsed state — the actual `:nth-child(n+N)` cutoff is rendered as an
+   inline <style> in layouts/partials/sections/recommendations.html, driven
+   by params.recommendations.visibleCount in hugo.yaml (nth-child can't
+   read a CSS custom property, so it has to be a literal number generated
+   per-build rather than living here as a fixed rule). */
+
+/* Card is split into two visually distinct zones: a plain body holding the
+   colleague's own words, and a tinted footer strip holding who said it.
+   `overflow: hidden` on the card lets the footer's flat top corners still
+   respect the card's own rounded corners. */
+#recommendations .rec-card {
+    position: relative;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-background-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, .04), 0 8px 24px rgba(15, 23, 42, .06);
+    transition: transform .15s ease, box-shadow .15s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+#recommendations .rec-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(15, 23, 42, .12);
+}
+
+#recommendations .rec-body {
+    padding: 1.5rem 1.35rem 1.1rem;
+}
+
+#recommendations .rec-quote-icon {
+    color: var(--primary-color);
+    opacity: 0.35;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* The capped-height, scrollable quote box — identical technique to
+   .card-text-scroll in projects.css, just renamed/scoped for this
+   section so the two stay independently tunable. */
+#recommendations .rec-content {
+    max-height: 13em;
+    overflow-y: auto;
+    padding-right: 0.4rem;
+}
+
+#recommendations .rec-content p {
+    font-size: 0.92rem;
+    font-style: italic;
+    color: var(--text-color);
+    line-height: 1.55;
+    margin-bottom: 0;
+}
+
+#recommendations .rec-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+#recommendations .rec-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#recommendations .rec-content::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    border-radius: 3px;
+}
+
+#recommendations .rec-content {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) transparent;
+}
+
+/* The "who said it" footer — a soft accent-tinted background (the same
+   low-opacity teal tint used elsewhere on the site, e.g. skill-cat icons)
+   makes the attribution read as a distinct zone from the quote above it,
+   without introducing a new, louder color. */
+#recommendations .rec-attribution {
+    margin-top: auto;
+    padding: 0.85rem 1.35rem;
+    background-color: var(--secondary-background-color);
+}
+
+#recommendations .rec-name {
+    font-family: "Space Grotesk", "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+#recommendations .rec-role {
+    color: var(--text-secondary-color);
+    font-size: 0.8rem;
+    margin-top: 0.15rem;
+}
+
+/* "Show all" / "Show fewer" toggle button — plain pill outline matching
+   the accent color, filling in on hover the same way skill tags do. */
+#recommendations .rec-toggle-wrap {
+    margin-top: 2rem;
+}
+
+#recommendations .rec-toggle-btn {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .12s ease, color .12s ease, transform .12s ease;
+}
+
+#recommendations .rec-toggle-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transform: translateY(-2px);
+}

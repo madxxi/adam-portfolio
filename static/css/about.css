@@ -23,22 +23,19 @@
     margin-bottom: 1.5rem;
 }
 
+/* Fixed 2/3/4-column breakpoints here were keyed to the full viewport
+   width, but this grid only ever occupies the content column (col-lg-8) —
+   at most ~66% of the container, less any browser zoom/OS display scaling
+   on top of that. That mismatch is why a "wide screen" could still get
+   stuck at 3 columns: the viewport itself needed to hit 1400px, when what
+   actually matters is how much width this grid has to work with. auto-fit
+   with minmax fixes that at the root — the browser packs in as many
+   ~220px columns as actually fit the real rendered width, so the card
+   count adapts to this column's own size, not the whole screen's. */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.1rem;
-}
-
-@media (min-width: 992px) {
-    .skills-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 575px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 .skill-cat {

@@ -142,6 +142,15 @@
                     </li>
                     {{ end }}
 
+                    {{ if and (.Site.Params.recommendations.enable | default false) (not (.Site.Params.navbar.menus.disableRecommendations | default false)) }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.Home.RelPermalink }}#recommendations"
+                            aria-label="recommendations">
+                            {{ .Site.Params.recommendations.title | default "Recommendations" }}
+                        </a>
+                    </li>
+                    {{ end }}
+
                     {{ if and (.Site.Params.contact.enable | default false) (not (.Site.Params.navbar.menus.disableContact | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.Home.RelPermalink }}#contact"

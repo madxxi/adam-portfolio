@@ -1,0 +1,90 @@
+{{/*
+    Site-only section, no theme equivalent. Renders LinkedIn "Recommendations
+    Received" as a dedicated testimonial-wall section, instead of leaving
+    them tucked away behind LinkedIn's own thumbs-up icon. Each recommender
+    is a card with a capped, internally-scrolling quote (same pattern as the
+    Projects card descriptions in static/css/projects.css) so a two-line
+    LinkedIn blurb and a ten-line one occupy the same footprint in the grid.
+
+    Refinements over the first version: (1) only the first `visibleCount`
+    cards show by default, with a "Show all" button revealing the rest, so
+    the section doesn't read as a wall of 27 cards on first scroll — the
+    count is a YAML param (params.recommendations.visibleCount), not a
+    hardcoded number, so it's tunable from hugo.yaml alone; (2) the quote
+    and the name/title are visually split into two zones — a plain body and
+    a tinted footer strip — so the two kinds of content (their words vs.
+    who said it) are easy to tell apart at a glance.
+*/}}
+{{ if .Site.Params.recommendations.enable | default false }}
+{{- $recommendations := .Site.Language.Params.recommendations | default .Site.Params.recommendations -}}
+{{- $items := $recommendations.items | default .Site.Params.recommendations.items -}}
+{{- $visibleCount := $recommendations.visibleCount | default 6 -}}
+<section id="recommendations" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ $recommendations.title | default "Recommendations" }}</h3>
+        {{ with $recommendations.subtitle }}<p class="text-center recommendations-subtitle">{{ . }}</p>{{ end }}
+        <div class="row justify-content-center">
+            <div class="col-12">
+                {{ if gt (len $items) $visibleCount }}
+                <style>
+                    /* nth-child's An+B argument has to be a literal, so the
+                       configurable cutoff is rendered here rather than as a
+                       CSS custom property (nth-child can't read var()). */
+                    #recommendations .recommendations-grid.is-collapsed .rec-card:nth-child(n+{{ add $visibleCount 1 }}) {
+                        display: none;
+                    }
+                </style>
+                {{ end }}
+                <div class="recommendations-grid">
+                    {{ range $items }}
+                    <div class="rec-card">
+                        <div class="rec-body">
+                            <i class="fas fa-quote-left rec-quote-icon"></i>
+                            <div class="rec-content">
+                                <p>{{ .content }}</p>
+                            </div>
+                        </div>
+                        <div class="rec-attribution">
+                            <div class="rec-name">{{ .name }}</div>
+                            {{ with .role }}<div class="rec-role">{{ . }}</div>{{ end }}
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+                {{ if gt (len $items) $visibleCount }}
+                <div class="text-center rec-toggle-wrap">
+                    <button type="button" class="rec-toggle-btn" aria-expanded="false" data-count="{{ len $items }}">
+                        Show all {{ len $items }} recommendations
+                    </button>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+(function () {
+    var section = document.getElementById('recommendations');
+    if (!section) return;
+    var grid = section.querySelector('.recommendations-grid');
+    var btn = section.querySelector('.rec-toggle-btn');
+    if (!grid || !btn) return;
+
+    var collapsedLabel = btn.textContent.trim();
+    var expandedLabel = 'Show fewer';
+
+    // Only collapse via JS, so a visitor with JS disabled simply sees every
+    // card instead of being stuck with a partial list and a dead button.
+    grid.classList.add('is-collapsed');
+
+    btn.addEventListener('click', function () {
+        var collapsed = grid.classList.toggle('is-collapsed');
+        btn.textContent = collapsed ? collapsedLabel : expandedLabel;
+        btn.setAttribute('aria-expanded', String(!collapsed));
+        if (collapsed) {
+            section.scrollIntoView({ block: 'start', behavior: 'smooth' });
+        }
+    });
+})();
+</script>
+{{ end }}
