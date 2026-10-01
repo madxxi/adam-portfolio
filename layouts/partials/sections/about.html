@@ -33,6 +33,37 @@
                     </div>
                 </div>
                 {{ end }}
+
+                {{ if .Site.Params.about.growing.enable }}
+                {{ $growing := .Site.Language.Params.about.growing | default .Site.Params.about.growing }}
+                <div class="growing-section">
+                    {{ with $growing.title }}<h4 class="growing-title">{{ . }}</h4>{{ end }}
+                    {{ with $growing.subtitle }}<p class="growing-subtitle">{{ . }}</p>{{ end }}
+                    {{ with $growing.intro }}<p class="growing-intro">{{ . }}</p>{{ end }}
+                    <div class="growing-grid">
+                        {{ range $growing.items }}
+                        {{ if .url }}
+                        <a class="growing-card" href="{{ .url }}" target="_blank" rel="noopener">
+                            <h5>
+                                {{ with .icon }}<span class="growing-card-ico"><i class="{{ . }}"></i></span>{{ end }}
+                                <span>{{ .title }}</span>
+                            </h5>
+                            <p>{{ .content }}</p>
+                            <span class="growing-card-link">Learn more <i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        {{ else }}
+                        <div class="growing-card">
+                            <h5>
+                                {{ with .icon }}<span class="growing-card-ico"><i class="{{ . }}"></i></span>{{ end }}
+                                <span>{{ .title }}</span>
+                            </h5>
+                            <p>{{ .content }}</p>
+                        </div>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
             </div>
             {{ if .Site.Params.about.image }}
             <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">

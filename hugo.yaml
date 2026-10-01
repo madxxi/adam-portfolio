@@ -125,6 +125,8 @@ params:
           url: https://github.com/madxxi
         - icon: fa fa-envelope
           url: mailto:mr.mynor.diaz@gmail.com
+        - icon: fas fa-thumbs-up
+          url: "/documents/Adam-RecommendationsReceived_JUL2026.pdf"
 
   # ---- ABOUT ----
   about:
@@ -234,6 +236,35 @@ params:
             - name: "Agile / Scrum"
             - name: "SAFe"
             - name: "Bitbucket / GitHub"
+
+    # A "currently sharpening" subsection under the Toolkit — distinct from
+    # the established skills above, this is deliberately-in-progress stuff.
+    # Each item is grounded in something real: the hero content already
+    # calls out AWS/Terraform as the active stretch beyond Azure/OpenShift,
+    # the market-scanner repo is a real agent (not just AI-assisted work),
+    # Perses is the project already namechecked in Projects as one to
+    # watch, and the two retiree analyzers are real shipped, usable tools.
+    growing:
+      enable: true
+      title: "Continuous Learning & Growth"
+      subtitle: "Skills I am actively tuning!"
+      intro: "As there is never an end to learning: Infrastructure as Code, AI tooling, and product-building beyond day-to-day SRE work."
+      items:
+        - title: "Infrastructure as Code (AWS + Terraform)"
+          icon: "fas fa-cloud-arrow-up"
+          content: "Extending beyond the Azure/OpenShift world I've run in for 15+ years — provisioning real AWS infrastructure with Terraform through hands-on portfolio work."
+        - title: "Agentic AI & LLM-Augmented Engineering"
+          icon: "fas fa-robot"
+          content: "Moving past using AI assistants day-to-day into building with them — an autonomous stock-market scanning agent, and AI/RAG-based retrieval over operational runbooks at work."
+          url: "https://github.com/madxxi/market-scanner-agent-prototype"
+        - title: "Next-Gen Observability (Perses)"
+          icon: "fas fa-chart-line"
+          content: "Tracking Perses, a Kubernetes-native dashboarding project, as a possible successor to the Grafana stack my whole career has been built on — staying ahead of my own toolset."
+          url: "https://perses.dev/"
+        - title: "Shipping Full Tools, End-to-End"
+          icon: "fas fa-rocket"
+          content: "Building small, complete products for real people to use — not just infrastructure behind the scenes — from a privacy-exposure checker to two retirement-planning analyzers."
+          url: "https://madxxi.github.io/retirement-analyzer/"
 
   # ---- EXPERIENCE ----
   # Add earlier roles below the Amadeus entry as additional "company" blocks.

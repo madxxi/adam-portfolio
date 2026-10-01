@@ -19,7 +19,6 @@
 .skills-toolkit-subtitle {
     color: var(--text-secondary-color);
     font-size: 0.9rem;
-    max-width: 60ch;
     margin-bottom: 1.5rem;
 }
 
@@ -104,4 +103,109 @@ a.skill-cat .tag,
 .skill-cat a.tag:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+/* "Growing" — skills actively being sharpened, distinct from the settled
+   Toolkit above it. Cards get a colored left edge (rather than the
+   Toolkit's plain border) so the two subsections read as different kinds
+   of claim at a glance: "what I already do" vs. "what I'm deliberately
+   building toward right now." Cards with a `url` are whole-card links
+   (cursor + hover lift) instead of using an internal tag, since each one
+   points at a single project, not a list of them. */
+.growing-section {
+    margin-top: 2.5rem;
+}
+
+.growing-title {
+    font-family: "Space Grotesk", "Inter", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+}
+
+.growing-subtitle {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.6rem;
+}
+
+.growing-intro {
+    color: var(--text-secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.growing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.1rem;
+}
+
+.growing-card {
+    display: block;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-background-color);
+    border-left: 3px solid var(--primary-color);
+    border-radius: 0.75rem;
+    padding: 1.15rem 1.25rem;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, .04), 0 8px 24px rgba(15, 23, 42, .06);
+    text-decoration: none;
+    color: inherit;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+a.growing-card {
+    cursor: pointer;
+}
+
+a.growing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(15, 23, 42, .12);
+}
+
+.growing-card h5 {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: "Space Grotesk", "Inter", sans-serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: var(--text-color);
+}
+
+.growing-card-ico {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background-color: var(--secondary-background-color);
+    color: var(--primary-color);
+    font-size: 0.78rem;
+    flex-shrink: 0;
+}
+
+.growing-card p {
+    color: var(--text-secondary-color);
+    font-size: 0.85rem;
+    line-height: 1.55;
+    margin-bottom: 0;
+}
+
+.growing-card-link {
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.75rem;
+}
+
+.growing-card-link i {
+    font-size: 0.7rem;
+    margin-left: 0.15rem;
 }
