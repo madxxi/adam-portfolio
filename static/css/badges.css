@@ -1,0 +1,86 @@
+/* Accreditations & Badges — a compact wall of small credential rows
+   (badge image or icon, title, issuer · date), meant to sit right after
+   Certifications for the lighter-weight credentials that don't warrant
+   a full card. Rows with a link are whole-row links. */
+#badges .badges-subtitle {
+    color: var(--text-secondary-color);
+    margin: 0.35rem auto 1.5rem;
+}
+
+#badges .badges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.75rem;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    #badges .badges-grid {
+        padding: 0 3rem;
+    }
+}
+
+#badges .badge-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0.8rem;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-background-color);
+    border-radius: 0.8rem;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, .04), 0 4px 12px rgba(15, 23, 42, .05);
+    color: var(--text-color);
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+#badges a.badge-row:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(15, 23, 42, .12);
+}
+
+#badges .badge-row-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+#badges .badge-row-ico {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--secondary-background-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+#badges .badge-row-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex: 1;
+}
+
+#badges .badge-row-title {
+    font-weight: 600;
+    font-size: 0.85rem;
+    line-height: 1.3;
+}
+
+#badges .badge-row-meta {
+    color: var(--text-secondary-color);
+    font-size: 0.74rem;
+    margin-top: 0.1rem;
+}
+
+#badges .badge-row-go {
+    color: var(--primary-color);
+    font-size: 0.7rem;
+    opacity: 0.7;
+    flex-shrink: 0;
+}

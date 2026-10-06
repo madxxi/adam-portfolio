@@ -1,0 +1,190 @@
+/* ====== SIZE KNOBS — edit these numbers to resize everything ======
+   --*-min    : minimum card width. BIGGER number = bigger cards, fewer per row.
+   --*-title  : card title font size.   --*-body : card body text size.
+   --*-img    : height of the logo/badge area.
+   Original (pre-compact) look was roughly: min 300-380px, title 1rem+,
+   body 1rem, img 100-120px. */
+:root {
+    --cert-min: 215px;   --cert-title: 0.95rem;  --cert-body: 0.86rem;  --cert-img: 72px;
+    --proj-min: 300px;   --proj-title: 1rem;     --proj-body: 0.88rem;  --proj-img: 92px;  --proj-scroll: 11.5em;
+    --ach-min: 300px;    --ach-title: 0.98rem;   --ach-body: 0.88rem;
+}
+
+/* Compact cards — Certifications, Projects, and Background & Recognition.
+
+   The theme lays these out with Bootstrap columns (col-lg-3 / col-lg-4)
+   plus generous card padding, tall image areas and full-size body text,
+   so each card eats a lot of page. Here each section's row becomes a CSS
+   grid with auto-fill/minmax: the browser packs in as many narrow cards
+   as the real container width allows (same sizing-off-own-width lesson
+   as the Toolkit grid), and type/padding/image sizes are scaled down
+   while staying comfortably readable (smallest text is 0.78rem). */
+
+/* ---- shared grid plumbing ---- */
+#certifications .row.justify-content-center,
+#achievements .row.justify-content-center,
+#projects .row.justify-content-center {
+    display: grid;
+    gap: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Neutralize the Bootstrap column wrappers so the grid, not col-*
+   widths and my-3 margins, decides sizing and spacing. */
+#certifications .row.justify-content-center > [class*="col-"],
+#achievements .row.justify-content-center > [class*="col-"],
+#projects .row.justify-content-center > [class*="col-"] {
+    width: auto;
+    max-width: none;
+    flex: none;
+    padding: 0;
+    margin: 0 !important;
+}
+
+#certifications .card,
+#achievements .card,
+#projects .card {
+    margin: 0 !important;
+    border-radius: 0.8rem !important;
+}
+
+/* ---- Certifications ---- */
+#certifications .row.justify-content-center {
+    grid-template-columns: repeat(auto-fill, minmax(var(--cert-min), 1fr));
+}
+
+#certifications .card {
+    padding: 0.75rem !important;
+}
+
+#certifications .card-head {
+    height: calc(var(--cert-img) + 6px) !important;
+}
+
+#certifications .card-head img {
+    max-height: var(--cert-img) !important;
+    max-width: var(--cert-img) !important;
+}
+
+#certifications .card-body {
+    padding: 0.5rem 0.25rem 0 !important;
+}
+
+#certifications .card-title {
+    font-size: var(--cert-title) !important;
+    line-height: 1.3;
+    margin-bottom: 0.25rem;
+}
+
+#certifications .card-subtitle {
+    font-size: calc(var(--cert-body) - 0.06rem);
+    margin-bottom: 0.4rem !important;
+}
+
+#certifications .card-text {
+    font-size: var(--cert-body);
+    line-height: 1.4;
+    margin-bottom: 0.6rem !important;
+}
+
+#certifications .btn.btn-sm {
+    font-size: 0.74rem;
+    padding: 0.2rem 0.7rem;
+}
+
+/* ---- Projects ---- */
+#projects .row.justify-content-center {
+    grid-template-columns: repeat(auto-fill, minmax(var(--proj-min), 1fr));
+    align-items: start;
+}
+
+#projects .card-head {
+    height: calc(var(--proj-img) + 8px) !important;
+    padding: 0 1rem !important;
+}
+
+#projects .card-head img {
+    max-height: var(--proj-img) !important;
+}
+
+#projects .card .card-body {
+    padding: 0.4rem 0.9rem 0.6rem !important;
+}
+
+#projects .card-title {
+    font-size: var(--proj-title) !important;
+    line-height: 1.3;
+    margin-bottom: 0.3rem;
+}
+
+/* The theme's `.badge-secondary` is a Bootstrap 4 class that Bootstrap 5
+   no longer defines, so these tags rendered as white text on a
+   transparent background — invisible on white cards, yet still
+   reserving ~56px of blank space per card. Giving them a real tinted
+   pill look makes them visible and lets them wrap in a tight row. */
+#projects .card-body > div:first-child {
+    padding-bottom: 0.3rem !important;
+}
+
+#projects .badge {
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 0.28em 0.7em;
+    margin: 0 0.15rem 0.2rem 0;
+    background-color: var(--secondary-background-color);
+    color: var(--primary-color);
+    border: 1px solid transparent;
+}
+
+#projects .card-text,
+#projects .card-text-scroll {
+    font-size: var(--proj-body);
+    line-height: 1.45;
+}
+
+/* Shorter scroll box than the old ~9-10 lines (15.5em). */
+#projects .card-text-scroll {
+    max-height: var(--proj-scroll);
+}
+
+#projects .card-footer {
+    padding: 0.5rem 0.9rem !important;
+    font-size: 0.85rem;
+}
+
+#projects .card-footer .btn.btn-sm {
+    font-size: 0.74rem;
+    padding: 0.2rem 0.7rem;
+}
+
+/* ---- Background & Recognition (achievements) ---- */
+#achievements .row.justify-content-center {
+    grid-template-columns: repeat(auto-fill, minmax(var(--ach-min), 1fr));
+    align-items: start;
+}
+
+#achievements .card {
+    padding: 0.8rem 0.9rem !important;
+}
+
+#achievements .card-body {
+    padding: 0 !important;
+}
+
+#achievements .card-title {
+    font-size: var(--ach-title) !important;
+    line-height: 1.3;
+    margin-bottom: 0.35rem;
+}
+
+#achievements .card-text {
+    font-size: var(--ach-body);
+    line-height: 1.45;
+}
+
+/* Sub-headings ("Work Projects" / "Personal Projects") sit a little
+   tighter above their now-smaller grids. */
+#projects h3 {
+    margin-bottom: 0.75rem;
+}

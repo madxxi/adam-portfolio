@@ -29,7 +29,8 @@ Menus:
 
 params:
   title: "Mynor A. Diaz | Service Reliability & Platform Engineering"
-  description: "Lead Systems Engineer with 20+ years in SRE, platform operations, and observability for high-availability, global-scale infrastructure."
+  description: "Lead Systems Engineer with 20+ years in SRE, platform operations, 
+               and observability for high-availability, global-scale infrastructure."
   favicon: "/images/fav.png"
   useBootstrapCDN: false
   mathjax: false
@@ -83,13 +84,14 @@ params:
       disableProjects: false
       disableAchievements: false
       disableContact: false
+      disableBadges: false
 
   # ---- HERO ----
   hero:
     enable: true
     intro: "Hi, Welcome to my portfolio site!"
     title: "Mynor A. Diaz"
-    subtitle: "Lead Systems Engineer — SRE, Platform Ops & Observability, Incident/Change/Problem Management!"
+    subtitle: "Senior/Lead SRE | Observability & Reliability Engineering | Platform Operations | Cloud Infrastructure."
     content: >-
       Senior Site Reliability Engineer with 20+ years at Amadeus IT Group, one of the world's largest travel solutions 
       providers, owning reliability for 460+ mission-critical applications. Sustained a 196–200/200 Service Stability 
@@ -125,8 +127,8 @@ params:
           url: https://github.com/madxxi
         - icon: fa fa-envelope
           url: mailto:mr.mynor.diaz@gmail.com
-        - icon: fas fa-thumbs-up
-          url: "/documents/Adam-RecommendationsReceived_JUL2026.pdf"
+#        - icon: fas fa-thumbs-up
+#          url: "/documents/Adam-RecommendationsReceived_JUL2026.pdf"
 
   # ---- ABOUT ----
   about:
@@ -146,7 +148,7 @@ params:
       Prometheus and PromQL, Grafana dashboards, and helping design and build systems that are 
       centered on prevention and self-recovery and actually reach the people who actually get
       things corrected, with git-based workflows for infrastructure changes, and clean incident 
-      routing through ServiceNow or another incident management system. I hold a MS in Computer 
+      routing through ServiceNow or another incident management system. I hold a Masters in Computer 
       Information Systems from Nova Southeastern University and a MBA from the University of Florida, 
       and I'm a U.S. military veteran.
 
@@ -154,11 +156,11 @@ params:
       I am also available for Incident/Change/Problem Management as well as SRE Management roles, 
       primarily remote, but open to hybrid (40/60) based in South Florida in Broward County or Northern Miami Dade.
 
-      Also, it's not only what I bring along with my experience and skills! Throughout my carrer I built a very
-      strong network of professionals with expertise as SREs, platform engineers, cloud architects, 
-      Senior DBAs, developers, network administrations, and a wide array of experts who I can reach out to 
-      for advice, guidance, and collaboration!  A goldmine of knowledge and experience that I can tap 
-      into to solve problems, improve processes, and drive innovation.
+      Also, it's not only what I bring along with my experience and skills! Throughout my career I created some
+      bonds with professionals with an assortment of expertsie: platform engineers, cloud architects, 
+      Senior DBAs, developers, network administrators, and a wide array of experts whom I can reach out to 
+      for advice, guidance, and collaboration!  A goldmine of knowledge and experience that promotes a collaborative 
+      environment to solve problems, improve processes, and drive innovation.
 
     skills:
       enable: true
@@ -288,13 +290,13 @@ params:
               - Implemented SLI/SLO frameworks and multi-window error-budget burn-rate alerting across 460+ mission-critical 
               travel applications, cutting false-positive pages by 50% and focusing engineering effort on the highest-risk 
               reliability work.
-              - Built a library that resulted on 100+ templated Prometheus/Thanos (PromQL) alert rules with Go-based tooling 
+              - Built a library that resulted in 100+ templated Prometheus/Thanos (PromQL) alert rules with Go-based tooling 
               that auto-generated Grafana dashboards and routed incidents to ServiceNow; automated rule rollout with GitHub 
               Actions and Bash, reducing on-call pages by ~250/week, deployment time from 120 to 15 minutes, and manual 
               toil by ~10 hours/week.
               - Led multi-phase migration of 400+ applications and 2,600 Linux hosts from physical to virtual infrastructure, 
               then to private Red Hat OpenShift (v3/v4) and public Microsoft Azure, decomposing the portfolio into 460+ 
-              microservices-based applications with zero customer-facing downtime and eventually reduc provisioning time 
+              microservices-based applications with zero customer-facing downtime and eventually reduced provisioning time 
               from 6 weeks to 48 hours. 
               - Reduced average troubleshooting time on complex incidents by 15% by introducing AIOps practices, including 
               AI-assisted diagnosis (GitHub Copilot, Claude, GPT-4) and RAG-based retrieval over Confluence runbooks and 
@@ -302,10 +304,10 @@ params:
               - Trained and onboarded 25+ engineers as official instructor for the Amadeus Cloud Services (ACS) curriculum 
               (ACS Induction; ACS Incidents and Recovery), shortening new-hire time to operational readiness from 12 to 2 weeks.
 
-          - name: "Sre SRE (Unix/Linux) / Lead Systems Engineer"
+          - name: "Sr. Systems Engineer (Unix/Linux) / Lead Systems Engineer"
             date: "Apr 2005 - Jun 2008 / Jul 2008 - Dec 2018"
             info:
-              content: "Sr. and then Lead Systems Engineer of teams responsible for all production Linux/Unix systems supporting airline reservation infrastructure"
+              content: "Senior and then Lead Systems Engineer of teams responsible for all production Linux/Unix systems supporting airline reservation infrastructure"
             content: |
               - Served as technical lead for a global 24/7 team of 9 engineers without formal reporting authority, providing 
               performance assessments that fed formal review cycles, and significantly influencing hiring decisions; mentored 
@@ -400,6 +402,29 @@ params:
         newPage: false        
 #        verifyUrl: "https://www.exin.com/certificates/verify?certificate=MDiaz_SAFePractitioner_Certificate_JAN2021.pdf"
 
+  # ---- ACCREDITATIONS & BADGES ----
+  # Compact credential rows shown right after Certifications. DISABLED for
+  # now - flip `enable` to true once real badges are ready. The two items
+  # below are placeholders showing the supported fields; replace them with
+  # real ones. Per-item options: image (badge image, else `icon` is used,
+  # default fas fa-award), url or verifyUrl (makes the row a link), and
+  # `enable: false` to park an individual badge without deleting it.
+  badges:
+    enable: false
+    title: "Accreditations & Badges"
+    subtitle: "Credentials and digital badges earned along the way"
+    items:
+      - title: "Example Badge: Replace With Real Credential"
+        issuer: "Issuing Organization"
+        date: "Mon YYYY"
+        # image: "/images/badges/example-badge.png"
+        icon: "fas fa-award"
+        url: "https://www.credly.com/users/your-profile"
+      - title: "Example Badge Without a Link"
+        issuer: "Another Issuer"
+        date: "Mon YYYY"
+        icon: "fas fa-certificate"
+
   # ---- ACHIEVEMENTS ----
   # Use this section for certifications, veteran recognition, or specific
   # wins you can point to — swap the placeholders for real specifics.
@@ -408,10 +433,10 @@ params:
     title: "Background & Recognition"
     items:
       - title: "MTTR Reduction & Reliability Engineering: 99.x% Availability"
-        content: "Always Lead or Sr. of a team that Helped maintain 99.x% 
+        content: "Always a Lead or Senior of a team that Helped maintain 99.x% 
                  availability across reservation platform services (2005-2026)"
-      - title: "SaFE/ITIL Practitioner"
-        content: "Certified ITIL & SaFE practitioner, with experience leading 
+      - title: "SAFe/ITIL Practitioner"
+        content: "Certified ITIL & SAFe practitioner, with experience leading 
                  ITIL-based incident, change, and problem management for high-availability systems."
       - title: "Second Language: Spanish"
         content: "Fluent in Spanish, with experience working in bilingual environments and collaborating 
@@ -435,7 +460,7 @@ params:
         category: "work"
         content: "A sanitized collection of Prometheus alerting rules and PromQL query 
                   patterns for common SRE scenarios: latency, errors, saturation, pod states,
-                  infrastructure health, availabilty, etc."
+                  infrastructure health, availability, etc."
         image: "/images/projects/prometheus.png"
         featured:
           name: "View Repo"
@@ -522,14 +547,14 @@ params:
 
       - title: "Personal Privacy Checker"
         category: "personal"
-        content: "What I consider another interesting personal project, it checks how exposed is your privacy! 
+        content: "What I consider another interesting personal project, it checks how your privacy is exposed! 
                  In the US we have a big problem (which is not a rampant issue in Europe thanks to GDPR), that our personal 
-                 information is sold everywhere!  Most of us are unaware, and this information ends up exposed in an number of 
+                 information is sold everywhere!  Most of us are unaware, and this information ends up exposed in a number of 
                  unimaginable places!  Since the government has not provided us any built-in protections, we are only left with 
                  the option to protect ourselves.  The law (federal and state) may be able to assist, but only in a reactive way, 
                  and only after we discover how exposed our private information is, we must take initial steps to address it.  
-                 This is a dear and personal project, since my personal information was compromised a while ago, seeking to protect
-                 that privacy as best as I can.  This is but a template, you must configure it with your personal information!"
+                 This is a dear and personal project, since my personal information was compromised in the past, I am seeking to 
+                 protect that privacy as best as I can.  This is but a template, you must configure it with your personal information!"
         image: "/images/projects/identity-theft.jpeg"
         featured:
           name: "View Repo"
@@ -543,7 +568,7 @@ params:
 #          - icon: fab fa-github
 #            url: "https://madxxi.github.io/incident-runbook-templates/"
 
-      - title: "US Retiree Selector:  State and Healthcare Analyzer"
+      - title: "US Location Selector: State and Healthcare Analyzer"
         category: "personal"
         content: "This is another personal project that some will find useful to replicate.
                  It is a simple tool that allows you to evaluate, based on current laws and taxation rules,
@@ -551,42 +576,42 @@ params:
                  taxes based on local laws, but also where healthcare options and local property taxes may present 
                  you advantages.  It is a personal project that I developed to easily evaluate my own options, and 
                  I am sharing it here as a blueprint for others to address and perhaps even expand their personal 
-                 needs.  You can add all sources of income, the tool will give you a weighed in set of options 
+                 needs.  You can add all sources of income, the tool will give you a weighted in set of options 
                  for you to qualify them.
                  P.S.  It can use your claude API Key, but you can also configure others (Gemini AI Studio is free)!
-                 download the two files: index.html and README.txt, and then configure the index.html file with your own API key!"
-        image: "/images/projects/happy-retirement.jpg"
+                 Download the two files: index.html and README.txt, and then configure the index.html file with your own API key!"
+        image: "/images/projects/digital-nomad.png"
         featured:
-          name: "View Retirement Analyzer"
+          name: "View Repo"
           link: "https://madxxi.github.io/retirement-analyzer/"
         badges:
-          - "Retiree options"
-          - "Best Options for Retirees"
+          - "US Location options"
+          - "Best Options to save income"
           - "Know your options in the US"
         links:
           - icon: fab fa-github
             url: "https://github.com/madxxi/retirement-analyzer/"
 
-      - title: "US Retiree Expat Selector:  Living Abroad!"
+      - title: "US Expat Selector:  Living Abroad!"
         category: "personal"
         content: "This is another personal project that some will find useful to replicate.
-                 It is another version of the US Retiree Selector, but this one is focused on evaluating options 
-                 for US retirees who are considering living abroad.  The key factors considered are cost of living, 
-                 healthcare quality, taxation burden, Visa Ease, Cost of Living, and property rights.  
+                 It is another version of the US Analyzer, but this one is focused on evaluating options 
+                 for US citizens who are considering living abroad.  The key factors considered are cost of living, 
+                 healthcare quality, taxation burden, visa ease, and property rights.  
                  This is a personal project that I developed to easily evaluate my own options, and I am
                  sharing it here as a blueprint for others to address and perhaps even expand their personal needs.  
                  You can add all sources of income, the tool will give you a weighed in set of options for you to 
                  qualify them.
                  P.S.  It can use a variety of AI API Keys. Download locally the index.html and configure 
                  your own API key in the index.html file!"
-        image: "/images/projects/happy-retirement.jpg"
+        image: "/images/projects/digital-nomad.png"
         featured:
-          name: "View Expat Analyzer"
+          name: "View Repo"
           link: "https://madxxi.github.io/expat-analyzer/"
         badges:
-          - "Retiree options"
+          - "Living Abroad options"
           - "US Expat options"
-          - "Living Abroad!"
+          - "World Hopping!"
         links:
           - icon: fab fa-github
             url: "https://github.com/madxxi/expat-analyzer/"
@@ -696,7 +721,7 @@ params:
       - name: "Johan Cabrera"
         role: "Amadeus Global Operations"
         content: >-
-          Adam Diaz is an knowledgeable engineer and an excellent team supervisor. In our more than
+          Adam Diaz is a knowledgeable engineer and an excellent team supervisor. In our more than
           three years working together for the Amadeus Global Operations team he has proven himself to
           be a capable leader and an example to follow by our engineers and managers. I've been
           impressed with his organizational skills, his ability to lead the team through any

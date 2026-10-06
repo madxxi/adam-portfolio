@@ -1,0 +1,42 @@
+{{ if .Site.Params.badges.enable | default false }}
+{{- $badges := .Site.Language.Params.badges | default .Site.Params.badges -}}
+<section id="badges" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ $badges.title | default "Accreditations & Badges" }}</h3>
+        {{ with $badges.subtitle }}<p class="badges-subtitle text-center">{{ . }}</p>{{ end }}
+        <div class="badges-grid">
+            {{ range $badges.items }}
+            {{ if .enable | default true }}
+            {{ $href := .url | default .verifyUrl }}
+            {{ if $href }}
+            <a class="badge-row" href="{{ $href }}" target="_blank" rel="noopener" title="{{ .title }}">
+                {{ if .image }}
+                <img class="badge-row-img" src="{{ .image | strings.TrimPrefix "/" | relURL }}" alt="{{ .title }} badge">
+                {{ else }}
+                <span class="badge-row-ico"><i class="{{ .icon | default "fas fa-award" }}"></i></span>
+                {{ end }}
+                <span class="badge-row-text">
+                    <span class="badge-row-title">{{ .title }}</span>
+                    <span class="badge-row-meta">{{ .issuer }}{{ if and .issuer .date }} &middot; {{ end }}{{ .date }}</span>
+                </span>
+                <i class="fas fa-arrow-up-right-from-square badge-row-go"></i>
+            </a>
+            {{ else }}
+            <div class="badge-row" title="{{ .title }}">
+                {{ if .image }}
+                <img class="badge-row-img" src="{{ .image | strings.TrimPrefix "/" | relURL }}" alt="{{ .title }} badge">
+                {{ else }}
+                <span class="badge-row-ico"><i class="{{ .icon | default "fas fa-award" }}"></i></span>
+                {{ end }}
+                <span class="badge-row-text">
+                    <span class="badge-row-title">{{ .title }}</span>
+                    <span class="badge-row-meta">{{ .issuer }}{{ if and .issuer .date }} &middot; {{ end }}{{ .date }}</span>
+                </span>
+            </div>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
