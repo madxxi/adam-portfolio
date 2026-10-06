@@ -29,8 +29,7 @@ Menus:
 
 params:
   title: "Mynor A. Diaz | Service Reliability & Platform Engineering"
-  description: "Lead Systems Engineer with 20+ years in SRE, platform operations, 
-               and observability for high-availability, global-scale infrastructure."
+  description: "Senior/Lead SRE: Observability & Incident Response | Platform Operations | Cloud Infrastructure"
   favicon: "/images/fav.png"
   useBootstrapCDN: false
   mathjax: false
@@ -91,14 +90,11 @@ params:
     enable: true
     intro: "Hi, Welcome to my portfolio site!"
     title: "Mynor A. Diaz"
-    subtitle: "Senior/Lead SRE | Observability & Reliability Engineering | Platform Operations | Cloud Infrastructure."
+    subtitle: "Senior SRE: Observability & Incident Response."
     content: >-
-      Senior Site Reliability Engineer with 20+ years at Amadeus IT Group, one of the world's largest travel solutions 
-      providers, owning reliability for 460+ mission-critical applications. Sustained a 196–200/200 Service Stability 
-      Index for 12 consecutive years with sub-20-minute MTTR on critical outages, and served as Incident Commander for 
-      ~36 Sev-1/Sev-2 incidents per year. Led an alerts-as-code initiative (100+ Prometheus/Thanos rules, Go tooling, Grafana) 
-      that cut alert noise 50%, and the zero-downtime migration of 400+ applications to Red Hat OpenShift and Microsoft Azure. 
-      Extending into AWS and Terraform through hands-on portfolio work.  
+      I keep large-scale systems boring. 20 years running reliability for Amadeus's airline reservation platform.
+      200/200 stability score, 12 straight years; <20 min MTTR on critical outages; 50% less alert noise via alerts-as-code; 
+      400+ apps migrated to OpenShift/Azure, zero customer downtime 
     image: "/images/Adam-HeroPic.jpg"
     bottomImage:
       enable: false
@@ -113,10 +109,10 @@ params:
         url: "/documents/MynorDiaz_SRE-Management_ND.pdf"
         download: true
         newPage: false
-      - enable: true
+      - enable: false
         name: "Incident Manager Resume"
         url: "/documents/MynorDiaz_Incident-Manager_ND.pdf"
-        download: true
+        download: false
         newPage: false
 
     socialLinks:
@@ -154,7 +150,7 @@ params:
 
       I'm currently open to Lead/Senior SRE, Platform Engineering, and Cloud Infrastructure roles. 
       I am also available for Incident/Change/Problem Management as well as SRE Management roles, 
-      primarily remote, but open to hybrid (40/60) based in South Florida in Broward County or Northern Miami Dade.
+      primarily remote, but open to hybrid (20/80; 40/60) based in South Florida in Broward County or Northern Miami Dade.
 
       Also, it's not only what I bring along with my experience and skills! Throughout my career I created some
       bonds with professionals with an assortment of expertsie: platform engineers, cloud architects, 
@@ -277,7 +273,7 @@ params:
         companyUrl: "https://www.amadeus.com"
         jobs:
           - name: "Senior Service Reliability Engineer (SRE) - Cloud Technologies"
-            date: "Jan 2019 - Mar 2026 / Mar 2020- May 2023 (Remote)"
+            date: "Jan 2019 - Mar 2026 ; Fully remote:  Mar 2020- May 2023"
             info:
               content: "Site reliability & platform operations for global airline reservation infrastructure"
             content: |
@@ -568,53 +564,6 @@ params:
 #          - icon: fab fa-github
 #            url: "https://madxxi.github.io/incident-runbook-templates/"
 
-      - title: "US Location Selector: State and Healthcare Analyzer"
-        category: "personal"
-        content: "This is another personal project that some will find useful to replicate.
-                 It is a simple tool that allows you to evaluate, based on current laws and taxation rules,
-                 which states may provide you the best advantages in the US where you can maximize not only 
-                 taxes based on local laws, but also where healthcare options and local property taxes may present 
-                 you advantages.  It is a personal project that I developed to easily evaluate my own options, and 
-                 I am sharing it here as a blueprint for others to address and perhaps even expand their personal 
-                 needs.  You can add all sources of income, the tool will give you a weighted in set of options 
-                 for you to qualify them.
-                 P.S.  It can use your claude API Key, but you can also configure others (Gemini AI Studio is free)!
-                 Download the two files: index.html and README.txt, and then configure the index.html file with your own API key!"
-        image: "/images/projects/digital-nomad.png"
-        featured:
-          name: "View Repo"
-          link: "https://madxxi.github.io/retirement-analyzer/"
-        badges:
-          - "US Location options"
-          - "Best Options to save income"
-          - "Know your options in the US"
-        links:
-          - icon: fab fa-github
-            url: "https://github.com/madxxi/retirement-analyzer/"
-
-      - title: "US Expat Selector:  Living Abroad!"
-        category: "personal"
-        content: "This is another personal project that some will find useful to replicate.
-                 It is another version of the US Analyzer, but this one is focused on evaluating options 
-                 for US citizens who are considering living abroad.  The key factors considered are cost of living, 
-                 healthcare quality, taxation burden, visa ease, and property rights.  
-                 This is a personal project that I developed to easily evaluate my own options, and I am
-                 sharing it here as a blueprint for others to address and perhaps even expand their personal needs.  
-                 You can add all sources of income, the tool will give you a weighed in set of options for you to 
-                 qualify them.
-                 P.S.  It can use a variety of AI API Keys. Download locally the index.html and configure 
-                 your own API key in the index.html file!"
-        image: "/images/projects/digital-nomad.png"
-        featured:
-          name: "View Repo"
-          link: "https://madxxi.github.io/expat-analyzer/"
-        badges:
-          - "Living Abroad options"
-          - "US Expat options"
-          - "World Hopping!"
-        links:
-          - icon: fab fa-github
-            url: "https://github.com/madxxi/expat-analyzer/"
 
   # ---- RECOMMENDATIONS ----
   # Pulled from LinkedIn's Recommendations Received export (PDF), lightly
