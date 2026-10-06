@@ -29,7 +29,7 @@ Menus:
 
 params:
   title: "Mynor A. Diaz | Service Reliability & Platform Engineering"
-  description: "Senior/Lead SRE: Observability & Incident Response | Platform Operations | Cloud Infrastructure"
+  description: "Lead/Senior SRE: Observability & Incident Response | Platform Operations | Cloud Infrastructure"
   favicon: "/images/fav.png"
   useBootstrapCDN: false
   mathjax: false
@@ -90,7 +90,7 @@ params:
     enable: true
     intro: "Hi, Welcome to my portfolio site!"
     title: "Mynor A. Diaz"
-    subtitle: "Senior SRE: Observability & Incident Response."
+    subtitle: "Lead/Senior SRE: Observability & Incident Response."
     content: >-
       I keep large-scale systems boring. 20 years running reliability for Amadeus's airline reservation platform.
       200/200 stability score, 12 straight years; <20 min MTTR on critical outages; 50% less alert noise via alerts-as-code; 
@@ -132,9 +132,8 @@ params:
     title: "About Me"
     image: "/images/Adam-CzechRepublic.jpg"
     content: |-
-      I'm a Lead Systems Engineer with 20+ years of experience across site reliability
-      engineering, platform operations, and observability tooling, most recently at
-      **Amadeus**, working within high-availability global airline reservation infrastructure.
+      I'm a Lead Engineer with 20+ years of experience across site reliability engineering, platform operations, and observability tooling, 
+      most recently at  **Amadeus**, working within high-availability global airline reservation infrastructure.
 
       I have also delved, as part of that experience, into the ITIL model realm dealing with
       incident, change, and problem management, and led teams in a 24/7 environment to maintain 
