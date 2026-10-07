@@ -104,10 +104,10 @@ params:
         url: "/documents/MynorDiaz_Lead-SRE_ResiliencyandObservability_ND.pdf"
         download: true
         newPage: false
-      - enable: true
+      - enable: false
         name: "SRE Manager Resume"
         url: "/documents/MynorDiaz_SRE-Management_ND.pdf"
-        download: true
+        download: false
         newPage: false
       - enable: false
         name: "Incident Manager Resume"
@@ -132,7 +132,7 @@ params:
     title: "About Me"
     image: "/images/Adam-CzechRepublic.jpg"
     content: |-
-      I'm a Lead Engineer with 20+ years of experience across site reliability engineering, platform operations, and observability tooling, 
+      I'm a Lead of engineers with 20+ years of experience across site reliability engineering, platform operations, and observability tooling, 
       most recently at  **Amadeus**, working within high-availability global airline reservation infrastructure.
 
       I have also delved, as part of that experience, into the ITIL model realm dealing with
@@ -152,7 +152,7 @@ params:
       primarily remote, but open to hybrid (20/80; 40/60) based in South Florida in Broward County or Northern Miami Dade.
 
       Also, it's not only what I bring along with my experience and skills! Throughout my career I created some
-      bonds with professionals with an assortment of expertsie: platform engineers, cloud architects, 
+      bonds with professionals with an assortment of expertise: platform engineers, cloud architects, 
       Senior DBAs, developers, network administrators, and a wide array of experts whom I can reach out to 
       for advice, guidance, and collaboration!  A goldmine of knowledge and experience that promotes a collaborative 
       environment to solve problems, improve processes, and drive innovation.
@@ -258,10 +258,7 @@ params:
           icon: "fas fa-chart-line"
           content: "Tracking Perses, a Kubernetes-native dashboarding project, as a possible successor to the Grafana stack my whole career has been built on — staying ahead of my own toolset."
           url: "https://perses.dev/"
-        - title: "Shipping Full Tools, End-to-End"
-          icon: "fas fa-rocket"
-          content: "Building small, complete products for real people to use — not just infrastructure behind the scenes — from a privacy-exposure checker to two retirement-planning analyzers."
-          url: "https://madxxi.github.io/retirement-analyzer/"
+
 
   # ---- EXPERIENCE ----
   # Add earlier roles below the Amadeus entry as additional "company" blocks.
@@ -307,7 +304,7 @@ params:
               - Served as technical lead for a global 24/7 team of 9 engineers without formal reporting authority, providing 
               performance assessments that fed formal review cycles, and significantly influencing hiring decisions; mentored 
               18 engineers into senior roles over 10 years and cut team turnover by 25%.
-              - Served as Incident Commander (2013–2018) for ~15 major production incidents per year, directing cross-team 
+              - Served as Incident Commander (2013–2018) for ~36 major production incidents per year, directing cross-team 
               response and stakeholder communications through resolution; led ITIL incident, problem, and change management 
               with root-cause and preventive actions across thousands of production systems, reducing repeat incidents by 
               95% and change-related outages by 90%.
@@ -364,7 +361,7 @@ params:
         issuer: "Microsoft"
         date:  "May 23, 2022"
         image: "/images/certifications/MS-certified-fundamentals-badge.svg"    # optional badge; omit the line entirely if you don't have one
-        content: "Certified Azure Data Fundamentals"
+        content: "Certified Azure Fundamentals"
 #        documentUrl: "/documents/certifications/MDiaz-MS_Azure_Data_Fundamentals_Sep2023.pdf"
 #        download: true
 #        newPage: false      
@@ -428,7 +425,7 @@ params:
     title: "Background & Recognition"
     items:
       - title: "MTTR Reduction & Reliability Engineering: 99.x% Availability"
-        content: "Always a Lead or Senior of a team that Helped maintain 99.x% 
+        content: "Always a Lead or Senior of a team that Helped maintain 99.99% 
                  availability across reservation platform services (2005-2026)"
       - title: "SAFe/ITIL Practitioner"
         content: "Certified ITIL & SAFe practitioner, with experience leading 
@@ -543,13 +540,7 @@ params:
       - title: "Personal Privacy Checker"
         category: "personal"
         content: "What I consider another interesting personal project, it checks how your privacy is exposed! 
-                 In the US we have a big problem (which is not a rampant issue in Europe thanks to GDPR), that our personal 
-                 information is sold everywhere!  Most of us are unaware, and this information ends up exposed in a number of 
-                 unimaginable places!  Since the government has not provided us any built-in protections, we are only left with 
-                 the option to protect ourselves.  The law (federal and state) may be able to assist, but only in a reactive way, 
-                 and only after we discover how exposed our private information is, we must take initial steps to address it.  
-                 This is a dear and personal project, since my personal information was compromised in the past, I am seeking to 
-                 protect that privacy as best as I can.  This is but a template, you must configure it with your personal information!"
+                 This is a template, you must configure it with your personal information!"
         image: "/images/projects/identity-theft.jpeg"
         featured:
           name: "View Repo"
@@ -861,8 +852,8 @@ params:
   contact:
     enable: true
     title: "Get In Touch"
-    content: "Open to SRE Management, Incident/Change/Problem Management, Lead/Senior SRE, Platform Engineering, 
-             and Cloud Infrastructure roles — remote or hybrid (20/80; 40/60) South Florida based. Reach out directly."
+    content: "Open to SRE/DevOps Management or for Lead/Senior SRE roles — remote or hybrid (20/80; 40/60) 
+             South Florida based. Reach out directly."
     emails:
       - label: "Contact me!"
         address: "mr.mynor.diaz@gmail.com"
