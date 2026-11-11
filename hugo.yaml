@@ -92,7 +92,7 @@ params:
     title: "Mynor A. Diaz"
     subtitle: "Lead/Senior SRE: Observability & Incident Response."
     content: >-
-      I keep large-scale systems boring. 20 years running reliability for Amadeus's airline reservation platform.
+      I keep large-scale systems boring. 20 years running reliability for Amadeus' airline reservation platform.
       200/200 stability score, 12 straight years; <20 min MTTR on critical outages; 50% less alert noise via alerts-as-code; 
       400+ apps migrated to OpenShift/Azure, zero customer downtime 
     image: "/images/Adam-HeroPic.jpg"
@@ -276,7 +276,7 @@ params:
               Leading reliability engineering and platform operations for high-availability,
               global-scale airline reservation systems.
 
-              - Maintained a 196–200/200 Service Stability Index (SSI), Amadeus's internal reliability scorecard tied to 
+              - Maintained a 196–200/200 Service Stability Index (SSI), Amadeus' internal reliability scorecard tied to 
               MTTR, for 12 consecutive years (2013–2025), resolving 95%+ of incidents within target: sub-20-minute MTTR 
               on critical outages and sub-30-minute on degradations.
               - Implemented SLI/SLO frameworks and multi-window error-budget burn-rate alerting across 460+ mission-critical 
